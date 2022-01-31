@@ -5,8 +5,8 @@ export default class NavBar extends React.Component {
     
     render(){
         return (
-            <div class="text-center align-items-center">
-                <Navbar className='navbar' expand="lg">
+            <div class="d-flex text-center justify-content-around align-content-center w-100">
+                <Navbar className='navbar w-100 d-flex justify-content-around' expand="lg">
                     <Navbar.Brand href="/">Home</Navbar.Brand>
                     <Navbar.Brand href="/about">About</Navbar.Brand>
                     <Navbar.Brand href="/culture">Culture</Navbar.Brand>

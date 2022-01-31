@@ -8,21 +8,21 @@ import { PersonCircle } from 'react-bootstrap-icons';
 
 const Header = (props) => {
     return(
-        <Container className="text-center mt-5">
+        <Container className="text-center mt-5 w-100 p-0">
             <div className="d-flex align-items-center justify-content-around p-2">
                 <div>
-                    <PersonCircle/>
-                    <Link href="/login" class="p-1 text-dark">Log In</Link>
+                    <PersonCircle style={{color: 'rgb(117,16,18)'}}/>
+                    <Link to="/login" className="p-1 text-dark">Log In</Link>
                 </div>
                 <img src={logo} alt="Native"/>
                 <div className="d-flex align-items-center">
-                    <SocialIcon network="facebook" url="https://www.facebook.com/NativeOklahoma" style={{ height: 25, width: 25 }}></SocialIcon>
-                    <SocialIcon network="twitter" url="https://twitter.com/NativeOklahoma" style={{ height: 25, width: 25 }}></SocialIcon>
-                    <SocialIcon network="instagram" url="https://www.instagram.com/nativeoklahomamagazine/" style={{ height: 25, width: 25 }}></SocialIcon>
-                    <SocialIcon network="linkedin" url="https://www.linkedin.com/company/native-oklahoma" style={{ height: 25, width: 25 }}></SocialIcon>
+                    <SocialIcon className="p-2" network="facebook" url="https://www.facebook.com/NativeOklahoma" style={{ height: 25, width: 25 }}></SocialIcon>
+                    <SocialIcon className="p-2" network="twitter" url="https://twitter.com/NativeOklahoma" style={{ height: 25, width: 25 }}></SocialIcon>
+                    <SocialIcon className="p-2" network="instagram" url="https://www.instagram.com/nativeoklahomamagazine/" style={{ height: 25, width: 25 }}></SocialIcon>
+                    <SocialIcon className="p-2" network="linkedin" url="https://www.linkedin.com/company/native-oklahoma" style={{ height: 25, width: 25 }}></SocialIcon>
                 </div>
             </div>
-            <div className="d-flex justify-content-around text-center">
+            <div className="d-flex justify-content-around text-center w-100">
                 <NavBar/>
             </div>
         </Container>
