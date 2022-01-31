@@ -49,6 +49,14 @@
   color: white;
 }
 
+.footer {
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  background-color: rgb(155, 40, 42);
+  color: white;
+}
+
 .header {
   display: flex;
   align-content: center;

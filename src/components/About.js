@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import Header from './Header';
 import AboutImage from '../images/aboutImage.jpg';
-import Adam from '../images/adam.jpg'
+import Adam from '../images/adam.jpg';
+import Footer from './Footer'
 
 const About = (props) => {
     return (
@@ -24,7 +25,8 @@ const About = (props) => {
                     <strong style={{color: 'rgb(155, 40, 42)'}}>NATIVE OKLAHOMA MAGAZINE</strong> is a publication not only for the visitor to Oklahoma, it is also a resource for our Native community and neighbors. Every month, Native Oklahoma's award-winning writers showcase Native artists, cooks, foods, culture, and crafts - as well as current events and powwows.​
                     Every issue includes an event calendar and list of Native American attractions across Oklahoma, as well maps of areas featured in the issue. Native Oklahoma also includes a list of gaming venues, places to stay, and the location of tribal headquarters. 
                 </div>
-            </div>             
+            </div>     
+            <Footer/>        
         </Container>
     )
 }

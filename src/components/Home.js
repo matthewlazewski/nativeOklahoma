@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import Header from './Header';
-import ImageSlider from './ImageSlider'
+import ImageSlider from './imageSlider'
 import Informed from '../images/stayinformed.jpg'
 
 const Home = (props) => {
