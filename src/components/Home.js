@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import Header from './Header';
-import ImageSlider from './imageSlider'
+import ImageSlider from './ImageSlider'
 import Informed from '../images/stayinformed.jpg'
 
 const Home = (props) => {
@@ -14,8 +14,8 @@ const Home = (props) => {
             <div>
                 <ImageSlider/>
             </div>
-            <div>
-                <img src={Informed} alt="stay-informed"/>
+            <div class="d-flex">
+                <img id="stay-informed" src={Informed} alt="stay-informed"/>
             </div>
         </Container>
     )

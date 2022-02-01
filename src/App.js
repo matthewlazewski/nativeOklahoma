@@ -17,7 +17,7 @@ import News from './components/News';
 class App extends Component {
   render(){
     return (
-      <div className="wrapper d-flex">
+      
         <BrowserRouter>
           <Switch>
             <Route
@@ -82,7 +82,7 @@ class App extends Component {
             />
           </Switch>
         </BrowserRouter>
-      </div>
+    
     );
   }
 }

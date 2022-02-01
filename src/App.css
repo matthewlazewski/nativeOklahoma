@@ -1,4 +1,4 @@
-* {
+html, body {
   background-color: rgb(250,246,230);
 }
 
@@ -61,4 +61,24 @@
   display: flex;
   align-content: center;
   align-items: center;
+}
+
+@media(max-width: 1000px){
+  #stay-informed{
+    max-width: 700px
+  }
+}
+
+@media(max-width: 854px){
+  #stay-informed{
+    max-width: 500px;
+  }
+  #adam{
+    max-width: 500px;
+  }
+  .article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
