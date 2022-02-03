@@ -3,6 +3,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home';
 import './App.css';
+import { connect } from 'react-redux';
 import About from './components/About';
 import Culture from './components/Culture';
 import Directories from './components/Directories';
@@ -15,6 +16,15 @@ import News from './components/News';
 
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = { 
+      isLoggedIn: false,
+      user: {}
+    };
+  }
+
   render(){
     return (
       
@@ -23,7 +33,7 @@ class App extends Component {
             <Route
               exact path = '/'
               render={props => (
-                <Home {...props} />
+                <Home client={this.props.client} {...props} />
               )}
             />
             <Route
@@ -87,4 +97,10 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    user: state.user
+  }
+}
+
+export default connect(mapStateToProps, {})(App);

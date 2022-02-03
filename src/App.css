@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@100;400&display=swap');
 html, body {
   background-color: rgb(250,246,230);
+  font-family: 'Sarabun', sans-serif;
+}
+
+input, textarea {
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid grey;
+  background-color: rgba(167, 111, 111, 0.09);
 }
 
 .App {
@@ -9,6 +18,40 @@ html, body {
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.shopify-img{
+  max-width: 200px;
+  max-height: 200px;
+}
+
+#shop {
+  width: 30%;
+  border-radius: 5px;
+  color: black;
+  border: 1px transparent grey;
+  background-color: rgb(201, 189, 24);
+  margin-bottom: 10px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+#shop:hover {
+  text-decoration: none;
+}
+
+
+.Product {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#footer-email {
+  background-color: white;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -41,12 +84,46 @@ html, body {
   }
 }
 
+#contact-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#submit-button{
+  background-color:rgb(201, 189, 24);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.vertical {
+  border-left: 1px solid grey;
+  height: 50px;
+
+}
+
+navbar {
+  color: white;
+}
+
+a {
+  color: grey;
+}
+
 .navbar {
   align-items: center;
   align-content: center;
   text-align: center;
   background-color: rgb(155, 40, 42);
   color: white;
+}
+
+.contact-info {
+  padding: 10px;
 }
 
 .footer {

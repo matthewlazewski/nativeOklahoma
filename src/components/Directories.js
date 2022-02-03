@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
+import Header from './Header.js';
+import Footer from './Footer.js';
 
 
 const Directories = (props) => {
     return (
         <Container>
-            <div>
-                <h1>Directories</h1>
-            </div>
+            <Header />
+            <Footer />
         </Container>
     )
 }
