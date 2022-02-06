@@ -109,7 +109,7 @@ class Home extends React.Component {
 
                     <Products products={this.state.products} />
                     <div class="d-flex flex-column text-center justify-content-center align-items-center">
-                        <a href="https://native-oklahoma-store.myshopify.com/" target="_blank" id="shop">Shop Our Store</a>
+                        <a href="https://native-oklahoma-store.myshopify.com/" target="_blank" rel="noreferrer" id="shop">Shop Our Entire Store</a>
                     </div>
                     <div class="home-pics">
                         <img src={NOKMag} alt="NOK Mag" />

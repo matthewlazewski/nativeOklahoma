@@ -36,10 +36,42 @@ input, textarea {
   padding: 5px;
 }
 
-#shop:hover {
+
+
+#shop:hover, #submit-button:hover {
   text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+#directoryHeader{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+#directoryHeader li:hover{
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.download {
+  background-color: rgb(155, 40, 42);
+  border-radius: 5px;
+  margin: 5px;
+  padding: 2px 15px;
+  color: rgb(32, 32, 32);
+}
+
+.download:hover{
+  text-decoration: none;
+  color: rgb(32, 32, 32);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.bannerItem{
+  padding: 2px 5px;
+  margin-bottom: 5px;
+}
 
 .Product {
   padding: 10px;
@@ -114,6 +146,10 @@ a {
   color: grey;
 }
 
+#rateCardBanner {
+  background-color: rgb(209, 181, 181);
+}
+
 .navbar {
   align-items: center;
   align-content: center;
@@ -124,6 +160,11 @@ a {
 
 .contact-info {
   padding: 10px;
+}
+
+.title {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .footer {
@@ -146,6 +187,11 @@ a {
   align-items: center;
   width: 100%;
   margin: 0;
+}
+
+.article h6 {
+  color: rgb(155, 40, 42);
+  font-weight: bold;
 }
 
 .home-pics{
