@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home';
 import './App.css';
 import { connect } from 'react-redux';
+import { fetchPosts } from './actions/constantContactActions.js';
 import About from './components/About';
 import Culture from './components/Culture';
 import Directories from './components/Directories';
@@ -23,6 +24,10 @@ class App extends Component {
       isLoggedIn: false,
       user: {}
     };
+  }
+
+  componentDidMount(){
+    this.props.fetchPosts();
   }
 
   render(){
@@ -103,4 +108,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps, {})(App);
+export default connect(mapStateToProps, { fetchPosts })(App);

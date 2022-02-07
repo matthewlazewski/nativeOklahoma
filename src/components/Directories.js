@@ -14,7 +14,7 @@ const Directories = (props) => {
     return (
         <Container>
             <Header />
-            <div class="d-flex flex-column">
+            <div class="d-flex flex-column pt-3">
                 <div>
                     <ul id="directoryHeader">
                         <li><Link activeClass="active" to="OklahomaTribalDirectory" spy={true} smooth={true}/>Oklahoma Tribal Directory</li>
