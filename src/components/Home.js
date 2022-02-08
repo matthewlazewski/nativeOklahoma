@@ -10,6 +10,7 @@ import Footer from './Footer';
 import Products from './shopify/Products.js';
 import Cart from './shopify/Cart.js';
 import Shop from '../images/shopnok.jpg';
+import Advertise from '../images/home-page-ad.jpg'
 
 class Home extends React.Component {
 
@@ -117,6 +118,16 @@ class Home extends React.Component {
                     </div>
                     <div class="home-pics">
                         <img src={advertise} alt="advertise" />
+                    </div>
+                </div>
+                <div class="d-flex article justify-content-between">
+                    <div class=" d-flex flex-column w-50 align-items-center justify-content-center p-2">
+                        <div class="text-center w-75">
+                            <h3>ADVERTISE NOW!</h3>
+                            Promote your business through Native Oklahoma! Click below to view rates and size specs. Ads work! Contact Adam Proctor for more at adam@nativeoklahoma.us or call 918.409.7252</div>
+                    </div>
+                    <div class="home-pics d-flex justify-content-center w-50">
+                        <img src={Advertise} />
                     </div>
                 </div>
                 <div class="w-100">
