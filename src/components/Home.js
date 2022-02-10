@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import Header from './Header';
-import ImageSlider from './ImageSlider';
+import ImageSlider from './imageSlider';
 import Informed from '../images/stayinformed.jpg';
 import NOKMag from '../images/NOKMag.jpg';
 import advertise from '../images/advertise.jpg';
