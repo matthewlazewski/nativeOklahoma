@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import Header from './Header';
-import ImageSlider from './imageSlider';
+import ImageSlider from './ImageSlider';
 import Informed from '../images/stayinformed.jpg';
 import NOKMag from '../images/NOKMag.jpg';
 import advertise from '../images/advertise.jpg';
@@ -10,7 +10,8 @@ import Footer from './Footer';
 import Products from './shopify/Products.js';
 import Cart from './shopify/Cart.js';
 import Shop from '../images/shopnok.jpg';
-import Advertise from '../images/home-page-ad.jpg'
+import Advertise from '../images/home-page-ad.jpg';
+import AdvertiseBackground from '../images/advertise-background.jpg';
 
 class Home extends React.Component {
 
@@ -119,11 +120,17 @@ class Home extends React.Component {
                         <img src={advertise} alt="advertise" />
                     </div>
                 </div>
-                <div class="d-flex article justify-content-between">
-                    <div class=" d-flex flex-column w-50 align-items-center justify-content-center p-2">
-                        <div class="text-center w-75">
+                <div class="d-flex article justify-content-between align-content-stretch p-0 m-0">
+                    <div id="advertiseWords" class=" d-flex flex-column w-50 align-items-center justify-content-center">
+                        <div class="text-center w-75 lead mb-2">
                             <h3>ADVERTISE NOW!</h3>
-                            Promote your business through Native Oklahoma! Click below to view rates and size specs. Ads work! Contact Adam Proctor for more at adam@nativeoklahoma.us or call 918.409.7252</div>
+                            Promote your business through Native Oklahoma! Click below to view rates and size specs. Ads work! Contact Adam Proctor for more at adam@nativeoklahoma.us or call 918.409.7252
+                        </div>
+                        <div id="adButtons" class="d-flex flex-column text-center">
+                            <a id='advertiseButton' href="/advertise">View Rates</a>
+                            <a class="download" href=" tel:918-409-7252">Call</a>
+                            <a class="download"  href="mailto: adam@nativeoklahoma.us">Email</a>
+                        </div>
                     </div>
                     <div class="home-pics d-flex justify-content-center w-50">
                         <img src={Advertise} />

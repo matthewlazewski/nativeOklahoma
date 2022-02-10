@@ -38,7 +38,7 @@ input, textarea {
 
 
 
-#shop:hover, #submit-button:hover {
+#shop:hover, #submit-button:hover, #advertiseButton:hover {
   text-decoration: none;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -54,11 +54,14 @@ input, textarea {
   cursor: pointer;
 }
 
+#advertiseWords {
+  background-image: url(./images/advertise-background.jpg);
+}
 .download {
   background-color: rgb(155, 40, 42);
   border-radius: 5px;
-  margin: 5px;
-  padding: 2px 15px;
+  margin: 10px;
+  padding: 2px 10px;
   color: rgb(32, 32, 32);
 }
 
@@ -130,6 +133,19 @@ input, textarea {
   border-radius: 5px;
   color: white;
   font-weight: bold;
+}
+
+#advertiseButton{
+  background-color:rgb(201, 189, 24);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  margin: 15px;
+  padding: 5px 20px;
+  font-stretch: expanded;
+  width: 200px;
 }
 
 .vertical {
