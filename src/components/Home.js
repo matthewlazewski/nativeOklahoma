@@ -94,7 +94,6 @@ class Home extends React.Component {
     }
 
     render(){
-        console.log(this.props);
         return (
             <Container className="align-items-center" style={{margin: '0 !important', padding: 0}}>
                 <div class="w-100">
