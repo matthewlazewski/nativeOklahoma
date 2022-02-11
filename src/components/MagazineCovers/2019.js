@@ -6,7 +6,7 @@ import December from '../../images/2019/Dec2019.jpg';
 
 const Twenty19 = () => {
     return (
-        <div>
+        <div class="magYear">
             <a href="https://5a762039-a2a6-4fbe-8d01-b55e1afce865.filesusr.com/ugd/e8a143_1b9c56614fee47e08b8d972e6607b452.pdf" download>           
                 <img src={August} alt="August2019" />
             </a>

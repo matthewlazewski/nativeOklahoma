@@ -132,7 +132,7 @@ class Home extends React.Component {
                             <a class="download"  href="mailto: adam@nativeoklahoma.us">Email</a>
                         </div>
                     </div>
-                    <div class="home-pics d-flex justify-content-center w-50">
+                    <div id="adpic" class="home-pics d-flex justify-content-center w-50">
                         <img src={Advertise} />
                     </div>
                 </div>

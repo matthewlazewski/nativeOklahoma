@@ -10,10 +10,10 @@ const Header = (props) => {
     return(
         <Container className="text-center mt-5 w-100 p-0">
             <div className="d-flex align-items-center justify-content-around p-2">
-                <div>
-                    <PersonCircle style={{color: 'rgb(117,16,18)'}}/>
-                    <Link to="/login" className="p-1 text-dark">Log In</Link>
-                </div>
+                 <div>
+                    {/* <PersonCircle style={{color: 'rgb(117,16,18)'}}/>
+                    <Link to="/login" className="p-1 text-dark">Log In</Link> */}
+                </div> 
                 <img class="home-pics" src={logo} alt="Native"/>
                 <div className="d-flex align-items-center">
                     <SocialIcon className="p-2" network="facebook" url="https://www.facebook.com/NativeOklahoma" style={{ height: 25, width: 25 }}></SocialIcon>

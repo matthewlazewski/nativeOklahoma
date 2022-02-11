@@ -14,24 +14,30 @@ import Twenty20Header from '../images/2020Header.jpg';
 const NOKMagazine = () => {
     return (
         <Container>
-            <Header />
-            <div id="2022" class="magYear">
-                {/* put banner here */}
-                <Twenty22 />
+        <Header />
+        <div class="d-flex flex-column align-items-center justify-content-center">
+            <div class="d-flex inline-flex justify-content-between">
+                <div>
+                    <Twenty22 />
+                </div>
+                <div>
+                    <p>Check Out Our Latest Issue</p>
+                    <a id="latestDownload" href="https://5a762039-a2a6-4fbe-8d01-b55e1afce865.filesusr.com/ugd/d0423d_bdeb1a4ee5934cbab66cd989da873f0a.pdf" download>Download</a>
+                </div>
             </div>
-            <div id="2021" class="magYear">
-                {/* put banner here */}
-                <Twenty21 />
+        
+            {/* put banner here */}
+            <Twenty21 />
+            <div class="d-flex justify-content-center">
+                <img src={Twenty20Header}/>
             </div>
-            <div id="2020" class="magYear">
-                <img src={Twenty20Header} />
-                <Twenty20 />
-            </div>
-            <div id="2019" class="magYear">
+            <Twenty20 />
+            <div class="d-flex justify-content-center">
                 <img src={Twenty19Header} />
-                <Twenty19 />
             </div>
-            <Footer />
+            <Twenty19 />
+        </div>
+        <Footer />
         </Container>
     )
 }

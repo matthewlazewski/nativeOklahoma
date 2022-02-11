@@ -127,6 +127,13 @@ input, textarea {
   align-content: center;
 }
 
+#adpic img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
 #submit-button{
   background-color:rgb(201, 189, 24);
   border: none;
@@ -134,6 +141,23 @@ input, textarea {
   color: white;
   font-weight: bold;
 }
+
+.magYear{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.magYear img{
+  padding: 10px;
+}
+
+.magYear a:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
 
 #advertiseButton{
   background-color:rgb(201, 189, 24);

@@ -11,7 +11,7 @@ import December from '../../images/2021/Dec2021.jpg';
 
 const Twenty21 = () => {
     return (
-        <div>
+        <div class="magYear">
             <a href="https://5a762039-a2a6-4fbe-8d01-b55e1afce865.filesusr.com/ugd/e74ef9_d71d2ea5551c497188a1d7bc8d49ebf2.pdf" download><img src={January} alt="January2021" /></a>
             <a href="https://5a762039-a2a6-4fbe-8d01-b55e1afce865.filesusr.com/ugd/13b10b_cdbaf529760447da94febdebe6f74845.pdf" download><img src={February} alt="February2021" /></a>
             <a href="https://5a762039-a2a6-4fbe-8d01-b55e1afce865.filesusr.com/ugd/e74ef9_d71d2ea5551c497188a1d7bc8d49ebf2.pdf" download><img src={March} alt="March2021" /></a>
