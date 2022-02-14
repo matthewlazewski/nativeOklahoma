@@ -36,7 +36,42 @@ input, textarea {
   padding: 5px;
 }
 
+#latestDownload{
+  cursor: pointer;
+  display: inline-block;  
+  height: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  position: relative;
+  line-height: 2.5em;
+  padding-left: 1em;
+  padding-right: 2em;
+  background: rgb(201, 189, 24);
+  color: black;
+}
 
+#latestDownload:after{
+  border-right: 20px solid rgb(201, 189, 24);
+  content: "";
+  position: absolute;
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid transparent;
+  height: 0px;
+  width: 0px;
+  margin-left: -20px;
+  left: 0; 
+}
+
+#latestDownload:hover, #latestDownload:active {
+  background: rgb(201, 189, 24);
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+#latestDownload:hover:after, #latestDownload:active:after{
+  border-right: 20px solid rgb(201, 189, 24);
+}
 
 #shop:hover, #submit-button:hover, #advertiseButton:hover {
   text-decoration: none;

@@ -9,6 +9,8 @@ import Twenty21 from './MagazineCovers/2021.js';
 import Twenty22 from './MagazineCovers/2022.js';
 import Twenty19Header from '../images/2019Header.jpg';
 import Twenty20Header from '../images/2020Header.jpg';
+import MagExample from '../images/magExample.jpg';
+import MagExample2 from '../images/magExample2.jpg';
 
 
 const NOKMagazine = () => {
@@ -16,16 +18,19 @@ const NOKMagazine = () => {
         <Container>
         <Header />
         <div class="d-flex flex-column align-items-center justify-content-center">
-            <div class="d-flex inline-flex justify-content-between">
+            <div class="d-flex inline-flex justify-content-between mb-2">
                 <div>
                     <Twenty22 />
                 </div>
-                <div>
+                <div class="d-flex flex-column align-items-center justify-content-center m-2">
+                    <a class="mb-3" id="latestDownload" href="https://5a762039-a2a6-4fbe-8d01-b55e1afce865.filesusr.com/ugd/d0423d_bdeb1a4ee5934cbab66cd989da873f0a.pdf" download>Download</a>
                     <p>Check Out Our Latest Issue</p>
-                    <a id="latestDownload" href="https://5a762039-a2a6-4fbe-8d01-b55e1afce865.filesusr.com/ugd/d0423d_bdeb1a4ee5934cbab66cd989da873f0a.pdf" download>Download</a>
                 </div>
             </div>
-        
+            <div class="article d-flex inline-flex align-items-center justify-content-center mr-0 ml-0 mb-2">
+                <img src={MagExample}/>
+                <img src={MagExample2}/>
+            </div>
             {/* put banner here */}
             <Twenty21 />
             <div class="d-flex justify-content-center">
