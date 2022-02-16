@@ -11,6 +11,7 @@ import Products from './shopify/Products.js';
 import Cart from './shopify/Cart.js';
 import Shop from '../images/shopnok.jpg';
 import Advertise from '../images/home-page-ad.jpg';
+import InstagramFeed from './InstagramFeed';
 import AdvertiseBackground from '../images/advertise-background.jpg';
 
 class Home extends React.Component {
@@ -135,6 +136,9 @@ class Home extends React.Component {
                     <div id="adpic" class="home-pics d-flex justify-content-center w-50">
                         <img src={Advertise} />
                     </div>
+                </div>
+                <div id="instafeed" class="d-flex flex-wrap">
+                    <InstagramFeed token={process.env.REACT_APP_INS_TOKEN} limit={10} />
                 </div>
                 <div class="w-100">
                     <Footer/>

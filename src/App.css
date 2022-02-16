@@ -119,6 +119,26 @@ input, textarea {
   }
 }
 
+.instaPic {
+  position: relative;
+}
+
+.instapic:hover a, .instaPic:hover img{
+  filter: blur(4px);
+}
+
+.instaPic p {
+  filter: blur(0) !important;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  top: 50%;
+  z-index: 1;
+}
+
+
 #contact-form{
   display: flex;
   flex-direction: column;

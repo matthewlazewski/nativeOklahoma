@@ -6,6 +6,7 @@ import NavBar from './NavBar';
 import { SocialIcon } from 'react-social-icons';
 import { PersonCircle } from 'react-bootstrap-icons';
 
+
 const Header = (props) => {
     return(
         <Container className="text-center mt-5 w-100 p-0">
