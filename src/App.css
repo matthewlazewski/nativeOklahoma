@@ -156,21 +156,26 @@ input, textarea {
 
 .instaPic {
   position: relative;
+  width: 50%;
+  height: 30%;
+  padding: 10px;
 }
 
 .instapic:hover a, .instaPic:hover img{
   filter: blur(4px);
+  text-decoration: none;
 }
 
 .instaPic p {
   filter: blur(0) !important;
-  position: absolute;
+  position: relative;
   color: white;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: .7rem;
   text-align: center;
-  top: 50%;
+  top: -80%;
   z-index: 1;
+  overflow: none;
+  text-decoration: none;
 }
 
 

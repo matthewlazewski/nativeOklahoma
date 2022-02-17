@@ -138,7 +138,7 @@ class Home extends React.Component {
                     </div>
                 </div>
                 <div id="instafeed" class="d-flex flex-wrap">
-                    <InstagramFeed token={process.env.REACT_APP_INS_TOKEN} limit={10} />
+                    <InstagramFeed token={process.env.REACT_APP_INS_TOKEN} limit={6} />
                 </div>
                 <div class="w-100">
                     <Footer/>
