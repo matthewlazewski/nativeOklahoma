@@ -63,7 +63,7 @@ const Feed = (props) => {
     }       
 
     return (
-        <React.Fragment>
+        <React.Fragment className={"w-25"}>
             {post}
         </React.Fragment>
     );
