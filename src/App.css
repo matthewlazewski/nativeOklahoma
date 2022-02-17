@@ -89,7 +89,8 @@ input, textarea {
   cursor: pointer;
 }
 
-#advertiseWords {
+
+#advertiseWords, .home-mag {
   background-image: url(./images/advertise-background.jpg);
 }
 .download {
@@ -156,25 +157,37 @@ input, textarea {
 
 .instaPic {
   position: relative;
-  width: 50%;
-  height: 30%;
+  top: 0px;
+  left: 0px;
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  text-align: center;
   padding: 10px;
 }
 
 .instapic:hover a, .instaPic:hover img{
   filter: blur(4px);
   text-decoration: none;
+  transform: none;
 }
 
 .instaPic p {
-  filter: blur(0) !important;
+  /* filter: blur(0) !important; */
+  height: 100px;
   position: relative;
+  display: inline-block;
   color: white;
   font-size: .7rem;
+  line-height: 10px;
+  vertical-align: middle;
   text-align: center;
-  top: -80%;
+  top: -70%;
+  bottom: 0;
+  left: 0;
+  right: 0;
   z-index: 1;
-  overflow: none;
+  /* overflow: none; */
   text-decoration: none;
 }
 
@@ -253,6 +266,7 @@ a {
 .navbar {
   align-items: center;
   align-content: center;
+  border-radius: 5px 5px 0 0;
   text-align: center;
   background-color: rgb(155, 40, 42);
   color: white;
@@ -271,6 +285,7 @@ a {
   align-items: center;
   align-content: center;
   text-align: center;
+  border-radius: 0 0 5px 5px;
   background-color: rgb(155, 40, 42);
   color: white;
 }
@@ -303,9 +318,82 @@ a {
   .home-pics img{
     max-width: 700px
   }
+
+  .instaPic {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .instapic:hover a, .instaPic:hover img{
+    filter: blur(4px);
+    text-decoration: none;
+    transform: none;
+  }
+  
+  .instaPic p {
+    /* filter: blur(0) !important; */
+    height: 100px;
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-size: .7rem;
+    line-height: 10px;
+    vertical-align: middle;
+    text-align: center;
+    top: -70%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    /* overflow: none; */
+    text-decoration: none;
+  }
 }
 
 @media(max-width: 854px){
+
+  .instaPic {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .instapic:hover a, .instaPic:hover img{
+    filter: blur(4px);
+    text-decoration: none;
+    transform: none;
+  }
+  
+  .instaPic p {
+    /* filter: blur(0) !important; */
+    height: 50px;
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-size: .7rem;
+    line-height: 10px;
+    vertical-align: middle;
+    text-align: center;
+    top: -70%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    /* overflow: none; */
+    text-decoration: none;
+  }
+
   .home-pics img{
     max-width: 500px;
   }

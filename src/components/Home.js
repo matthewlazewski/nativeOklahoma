@@ -13,6 +13,7 @@ import Shop from '../images/shopnok.jpg';
 import Advertise from '../images/home-page-ad.jpg';
 import InstagramFeed from './InstagramFeed';
 import AdvertiseBackground from '../images/advertise-background.jpg';
+import Buffalo from '../images/buffalo.jpg';
 
 class Home extends React.Component {
 
@@ -117,6 +118,14 @@ class Home extends React.Component {
                     <div class="home-pics">
                         <img src={NOKMag} alt="NOK Mag" />
                     </div>
+                    <div class="mag d-flex inline-flex text-center">
+                        <div class="w-50">
+                            <img src={Buffalo} alt="buffalo"/>
+                        </div>
+                        <div class="home-mag w-50">
+                            <p>Download latest</p>
+                        </div>
+                    </div>
                     <div class="home-pics">
                         <img src={advertise} alt="advertise" />
                     </div>
@@ -137,8 +146,8 @@ class Home extends React.Component {
                         <img src={Advertise} />
                     </div>
                 </div>
-                <div id="instafeed" class="d-flex flex-wrap">
-                    <InstagramFeed token={process.env.REACT_APP_INS_TOKEN} limit={6} />
+                <div id="instafeed" class="d-flex inline-flex align-content-center flex-wrap justify-content-center">
+                    <InstagramFeed token={process.env.REACT_APP_INS_TOKEN} limit={3} />
                 </div>
                 <div class="w-100">
                     <Footer/>

@@ -32,7 +32,7 @@ const InstagramFeed = ({token, ...props}) => {
     }, [props.limit])
 
     return (
-        <div className="d-flex flex-wrap p-2">
+        <div className="d-flex flex-wrap-2">
             {feeds.map((feed) => (
                 <Feed key={feed.id} feed={feed} />
             ))}

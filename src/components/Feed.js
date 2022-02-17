@@ -13,10 +13,6 @@ const Feed = (props) => {
         setHover(false);
     }
 
-    const hoverStyle = {
-        filter: 'blur(4px)'
-    }
-
     switch (media_type) {
         case "VIDEO":
             post = (
