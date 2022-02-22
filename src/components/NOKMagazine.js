@@ -7,8 +7,10 @@ import Twenty19 from './MagazineCovers/2019.js';
 import Twenty20 from './MagazineCovers/2020.js';
 import Twenty21 from './MagazineCovers/2021.js';
 import Twenty22 from './MagazineCovers/2022.js';
-import Twenty19Header from '../images/2019Header.jpg';
-import Twenty20Header from '../images/2020Header.jpg';
+import Twenty19Header from '../images/MagazineYears/2019.png';
+import Twenty20Header from '../images/MagazineYears/2020.png';
+import Twenty21Header from '../images/MagazineYears/2021.png';
+import Twenty22Header from '../images/MagazineYears/2022.png';
 import MagExample from '../images/magExample.jpg';
 import MagExample2 from '../images/magExample2.jpg';
 
@@ -31,7 +33,9 @@ const NOKMagazine = () => {
                 <img src={MagExample}/>
                 <img src={MagExample2}/>
             </div>
-            {/* put banner here */}
+            <div class="d-flex justify-content-center">
+                <img src={Twenty21Header}/>
+            </div>
             <Twenty21 />
             <div class="d-flex justify-content-center">
                 <img src={Twenty20Header}/>

@@ -13,7 +13,9 @@ import Shop from '../images/shopnok.jpg';
 import Advertise from '../images/home-page-ad.jpg';
 import InstagramFeed from './InstagramFeed';
 import AdvertiseBackground from '../images/advertise-background.jpg';
-import Buffalo from '../images/buffalo.jpg';
+import Buffalo from '../images/buffalo_full.jpg';
+import Feb22 from '../images/2022/Feb2022.jpg';
+
 
 class Home extends React.Component {
 
@@ -118,12 +120,13 @@ class Home extends React.Component {
                     <div class="home-pics">
                         <img src={NOKMag} alt="NOK Mag" />
                     </div>
-                    <div class="mag d-flex inline-flex text-center">
-                        <div class="w-50">
+                    <div class="mag d-flex article inline-flex justify-content-center align-content-center text-center">
+                        <div class="home-pics w-50">
                             <img src={Buffalo} alt="buffalo"/>
                         </div>
-                        <div class="home-mag w-50">
-                            <p>Download latest</p>
+                        <div class="home-mag w-50 d-flex flex-column align-items-center justify-content-center">
+                            <img id="buff alo-full" style={{height: "40%", width: "50%"}} src={Feb22} alt="latest issues"/>
+                            <a id='advertiseButton' href="https://5a762039-a2a6-4fbe-8d01-b55e1afce865.filesusr.com/ugd/d0423d_bdeb1a4ee5934cbab66cd989da873f0a.pdf" target="_blank">Download Issue</a>
                         </div>
                     </div>
                     <div class="home-pics">
