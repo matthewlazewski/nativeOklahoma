@@ -185,7 +185,7 @@ input, textarea {
   height: 100px;
   position: relative;
   display: inline-block;
-  color: white;
+  color: rgb(32, 32, 32);
   font-size: .7rem;
   line-height: 10px;
   vertical-align: middle;
