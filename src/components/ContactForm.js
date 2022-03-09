@@ -4,9 +4,9 @@ import Swal from 'sweetalert2';
 import { Form, Input, TextArea, Button } from 'semantic-ui-react';
 
 
-const SERVICE_ID = "**************";
-const TEMPLATE_ID = "*******";
-const USER_ID = "****************";
+const SERVICE_ID = "service_ydn3bgp";
+const TEMPLATE_ID = "template_ovtf6il";
+const USER_ID = "Ip_g2b2mokS7ePh6w";
 
 const ContactForm = () => {
 
@@ -37,7 +37,7 @@ const ContactForm = () => {
 
     return (
         <Form id="contact-form" onSubmit={handleOnSubmit}>
-            <div class="d-flex inline-flex m-2">
+            <div class="d-flex inline-flex m-3">
                     <Form.Field
                         id='form-input-control-email'
                         control={Input}
@@ -46,7 +46,7 @@ const ContactForm = () => {
                         required
                         icon='mail'
                         iconPosition='left'
-                        class="m-3"
+                        class="mr-3"
                     />
                     <Form.Field
                         id='form-input-control-last-name'
@@ -56,7 +56,7 @@ const ContactForm = () => {
                         required
                         icon='user circle'
                         iconPosition='left'
-                        class="m-3"
+                        class="ml-3"
                     />
             </div>
             <Form.Field
@@ -67,7 +67,7 @@ const ContactForm = () => {
                 placeholder='Message…'
                 required
             />
-            <button id='submit-button'>Send Message</button>
+            <Button id='submit-button'>Send Message</Button>
             {/* <span className={emailSent ? 'visible' : null}>Thank you for your message, we will be in touch in no time!</span> */}
         </Form>
     );
