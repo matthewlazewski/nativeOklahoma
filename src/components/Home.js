@@ -15,7 +15,8 @@ import InstagramFeed from './InstagramFeed';
 import AdvertiseBackground from '../images/advertise-background.jpg';
 import Buffalo from '../images/buffalo_full.jpg';
 import Feb22 from '../images/2022/Feb2022.jpg';
-
+import Ad1 from '../images/Ads/4.png';
+import Ad2 from '../images/Ads/6.png';
 
 class Home extends React.Component {
 
@@ -152,7 +153,15 @@ class Home extends React.Component {
                 <div id="instafeed" class="d-flex inline-flex align-content-center flex-wrap justify-content-center">
                     <InstagramFeed token={process.env.REACT_APP_INS_TOKEN} limit={3} />
                 </div>
-                <div class="w-100">
+                <div class="d-flex inline-flex justify-content-center pt-3 pb-0">
+                    <div class="w-50 p-2 m-1">
+                        <img src={Ad1} style={{height: "75%", width: "90%"}} alt="ads" />
+                    </div>
+                    <div class="w-50 p-2 m-1">
+                        <img src={Ad2} style={{height: "75%", width: "90%"}} alt="ads" />
+                    </div>
+                </div>
+                <div class=" home-pics w-100">
                     <Footer/>
                 </div>
             </Container>
