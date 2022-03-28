@@ -17,6 +17,7 @@ import Buffalo from '../images/buffalo_full.jpg';
 import Feb22 from '../images/2022/Feb2022.jpg';
 import Ad1 from '../images/Ads/4.png';
 import Ad2 from '../images/Ads/6.png';
+import BlogFeed from './BlogFeed.js';
 
 class Home extends React.Component {
 
@@ -109,6 +110,9 @@ class Home extends React.Component {
                     <ImageSlider/>
                     <div class="home-pics">
                         <img id="stay-informed" src={Informed} alt="stay-informed"/>
+                    </div>
+                    <div>
+                        <BlogFeed token={process.env.REACT_APP_BLOGGER_KEY} />
                     </div>
                     <div class="home-pics">
                         <img id="stay-informed" src={Shop} alt="shop" />
