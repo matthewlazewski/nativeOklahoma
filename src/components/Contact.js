@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 import { Container } from 'react-bootstrap';
 import Header from './Header.js';
 import Footer from './Footer.js';
@@ -8,6 +9,7 @@ import { SocialIcon } from 'react-social-icons';
 import ContactForm from './ContactForm.js'
 
 const Contact = (props) => {
+
     return (
         <Container>
             <Header />

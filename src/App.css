@@ -89,7 +89,16 @@ input, textarea {
   cursor: pointer;
 }
 
-#advertiseWords {
+#buffalo-full {
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.mag {
+  overflow: hidden;
+}
+
+#advertiseWords, .home-mag {
   background-image: url(./images/advertise-background.jpg);
 }
 .download {
@@ -156,21 +165,38 @@ input, textarea {
 
 .instaPic {
   position: relative;
+  top: 0px;
+  left: 0px;
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
 }
 
 .instapic:hover a, .instaPic:hover img{
   filter: blur(4px);
+  text-decoration: none;
+  transform: none;
 }
 
 .instaPic p {
-  filter: blur(0) !important;
-  position: absolute;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
+  /* filter: blur(0) !important; */
+  height: 100px;
+  position: relative;
+  display: inline-block;
+  color: rgb(32, 32, 32);
+  font-size: .7rem;
+  line-height: 10px;
+  vertical-align: middle;
   text-align: center;
-  top: 50%;
+  top: -70%;
+  bottom: 0;
+  left: 0;
+  right: 0;
   z-index: 1;
+  /* overflow: none; */
+  text-decoration: none;
 }
 
 
@@ -248,6 +274,7 @@ a {
 .navbar {
   align-items: center;
   align-content: center;
+  border-radius: 5px 5px 0 0;
   text-align: center;
   background-color: rgb(155, 40, 42);
   color: white;
@@ -266,6 +293,7 @@ a {
   align-items: center;
   align-content: center;
   text-align: center;
+  border-radius: 0 0 5px 5px;
   background-color: rgb(155, 40, 42);
   color: white;
 }
@@ -298,9 +326,82 @@ a {
   .home-pics img{
     max-width: 700px
   }
+
+  .instaPic {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .instapic:hover a, .instaPic:hover img{
+    filter: blur(4px);
+    text-decoration: none;
+    transform: none;
+  }
+  
+  .instaPic p {
+    /* filter: blur(0) !important; */
+    height: 100px;
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-size: .7rem;
+    line-height: 10px;
+    vertical-align: middle;
+    text-align: center;
+    top: -70%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    /* overflow: none; */
+    text-decoration: none;
+  }
 }
 
 @media(max-width: 854px){
+
+  .instaPic {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .instapic:hover a, .instaPic:hover img{
+    filter: blur(4px);
+    text-decoration: none;
+    transform: none;
+  }
+  
+  .instaPic p {
+    /* filter: blur(0) !important; */
+    height: 50px;
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-size: .7rem;
+    line-height: 10px;
+    vertical-align: middle;
+    text-align: center;
+    top: -70%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    /* overflow: none; */
+    text-decoration: none;
+  }
+
   .home-pics img{
     max-width: 500px;
   }

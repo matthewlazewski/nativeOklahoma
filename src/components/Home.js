@@ -13,6 +13,11 @@ import Shop from '../images/shopnok.jpg';
 import Advertise from '../images/home-page-ad.jpg';
 import InstagramFeed from './InstagramFeed';
 import AdvertiseBackground from '../images/advertise-background.jpg';
+import Buffalo from '../images/buffalo_full.jpg';
+import Feb22 from '../images/2022/Feb2022.jpg';
+import Ad1 from '../images/Ads/4.png';
+import Ad2 from '../images/Ads/6.png';
+import BlogFeed from './BlogFeed.js';
 
 class Home extends React.Component {
 
@@ -103,9 +108,12 @@ class Home extends React.Component {
                 </div>
                 <div class="home-main d-flex flex-column">
                     <ImageSlider/>
-                    <div class="home-pics">
+                    {/* <div class="home-pics">
                         <img id="stay-informed" src={Informed} alt="stay-informed"/>
                     </div>
+                    <div>
+                        <BlogFeed token={process.env.REACT_APP_BLOGGER_KEY} /> */}
+                    {/* </div> */}
                     <div class="home-pics">
                         <img id="stay-informed" src={Shop} alt="shop" />
                     </div>
@@ -116,6 +124,15 @@ class Home extends React.Component {
                     </div>
                     <div class="home-pics">
                         <img src={NOKMag} alt="NOK Mag" />
+                    </div>
+                    <div class="mag d-flex article inline-flex justify-content-center align-content-center text-center">
+                        <div class="home-pics w-50">
+                            <img src={Buffalo} alt="buffalo"/>
+                        </div>
+                        <div class="home-mag w-50 d-flex flex-column align-items-center justify-content-center">
+                            <img id="buff alo-full" style={{height: "40%", width: "50%"}} src={Feb22} alt="latest issues"/>
+                            <a id='advertiseButton' href="https://5a762039-a2a6-4fbe-8d01-b55e1afce865.filesusr.com/ugd/d0423d_bdeb1a4ee5934cbab66cd989da873f0a.pdf" target="_blank">Download Issue</a>
+                        </div>
                     </div>
                     <div class="home-pics">
                         <img src={advertise} alt="advertise" />
@@ -137,10 +154,18 @@ class Home extends React.Component {
                         <img src={Advertise} />
                     </div>
                 </div>
-                <div id="instafeed" class="d-flex flex-wrap">
-                    <InstagramFeed token={process.env.REACT_APP_INS_TOKEN} limit={10} />
+                <div id="instafeed" class="d-flex inline-flex align-content-center flex-wrap justify-content-center">
+                    <InstagramFeed token={process.env.REACT_APP_INS_TOKEN} limit={3} />
                 </div>
-                <div class="w-100">
+                {/* <div class="d-flex inline-flex justify-content-center pt-3 pb-0">
+                    <div class="w-50 p-2 m-1">
+                        <img src={Ad1} style={{height: "75%", width: "90%"}} alt="ads" />
+                    </div>
+                    <div class="w-50 p-2 m-1">
+                        <img src={Ad2} style={{height: "75%", width: "90%"}} alt="ads" />
+                    </div>
+                </div> */}
+                <div class=" home-pics w-100">
                     <Footer/>
                 </div>
             </Container>

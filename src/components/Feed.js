@@ -13,15 +13,11 @@ const Feed = (props) => {
         setHover(false);
     }
 
-    const hoverStyle = {
-        filter: 'blur(4px)'
-    }
-
     switch (media_type) {
         case "VIDEO":
             post = (
                 <video
-                    width='100%'
+                    width='20%'
                     height='auto' 
                     src={media_url} 
                     type="video/mp4" 
@@ -63,7 +59,7 @@ const Feed = (props) => {
     }       
 
     return (
-        <React.Fragment className={"w-25"}>
+        <React.Fragment>
             {post}
         </React.Fragment>
     );
