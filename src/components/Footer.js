@@ -55,7 +55,7 @@ const Footer = () => {
                     />
                     
         
-            <Button id='submit-button' class="pr-2 pl-2">Subscribe</Button>
+            <Button id='submit-button' class="mt-3 pr-2 pl-2">Subscribe</Button>
             {/* <span className={emailSent ? 'visible' : null}>Thank you for your message, we will be in touch in no time!</span> */}
         </Form>
                 </div>

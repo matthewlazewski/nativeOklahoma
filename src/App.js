@@ -3,7 +3,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home';
 import './App.css';
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 import { fetchPosts } from './actions/constantContactActions.js';
 import About from './components/About';
 import Culture from './components/Culture';
@@ -26,9 +26,9 @@ class App extends Component {
     };
   }
 
-  componentDidMount(){
-    this.props.fetchPosts();
-  }
+  // componentDidMount(){
+  //   this.props.fetchPosts();
+  // }
 
   render(){
     return (
@@ -108,4 +108,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps, { fetchPosts })(App);
+export default App;
