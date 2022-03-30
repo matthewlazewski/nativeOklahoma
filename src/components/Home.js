@@ -108,12 +108,12 @@ class Home extends React.Component {
                 </div>
                 <div class="home-main d-flex flex-column">
                     <ImageSlider/>
-                    <div class="home-pics">
+                    {/* <div class="home-pics">
                         <img id="stay-informed" src={Informed} alt="stay-informed"/>
                     </div>
                     <div>
-                        <BlogFeed token={process.env.REACT_APP_BLOGGER_KEY} />
-                    </div>
+                        <BlogFeed token={process.env.REACT_APP_BLOGGER_KEY} /> */}
+                    {/* </div> */}
                     <div class="home-pics">
                         <img id="stay-informed" src={Shop} alt="shop" />
                     </div>
@@ -157,14 +157,14 @@ class Home extends React.Component {
                 <div id="instafeed" class="d-flex inline-flex align-content-center flex-wrap justify-content-center">
                     <InstagramFeed token={process.env.REACT_APP_INS_TOKEN} limit={3} />
                 </div>
-                <div class="d-flex inline-flex justify-content-center pt-3 pb-0">
+                {/* <div class="d-flex inline-flex justify-content-center pt-3 pb-0">
                     <div class="w-50 p-2 m-1">
                         <img src={Ad1} style={{height: "75%", width: "90%"}} alt="ads" />
                     </div>
                     <div class="w-50 p-2 m-1">
                         <img src={Ad2} style={{height: "75%", width: "90%"}} alt="ads" />
                     </div>
-                </div>
+                </div> */}
                 <div class=" home-pics w-100">
                     <Footer/>
                 </div>
