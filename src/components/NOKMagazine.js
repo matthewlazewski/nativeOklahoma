@@ -20,7 +20,7 @@ const NOKMagazine = () => {
         <Container>
         <Header />
         <div class="d-flex flex-column align-items-center justify-content-center">
-            <div class="d-flex inline-flex justify-content-between mb-2">
+            <div class="newissue d-flex inline-flex justify-content-between mb-2">
                 <div>
                     <Twenty22 />
                 </div>
