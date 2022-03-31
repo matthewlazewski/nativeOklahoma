@@ -127,10 +127,10 @@ class Home extends React.Component {
                     </div>
                     <div class="mag d-flex article inline-flex justify-content-center align-content-center text-center">
                         <div class="home-pics w-50">
-                            <img src={Buffalo} alt="buffalo"/>
+                            <img id="buffalo" src={Buffalo} alt="buffalo"/>
                         </div>
                         <div class="home-mag w-50 d-flex flex-column align-items-center justify-content-center">
-                            <img id="buff alo-full" style={{height: "40%", width: "50%"}} src={Feb22} alt="latest issues"/>
+                            <img id="buffalo-full" style={{height: "40%", width: "50%"}} src={Feb22} alt="latest issues"/>
                             <a id='advertiseButton' href="https://5a762039-a2a6-4fbe-8d01-b55e1afce865.filesusr.com/ugd/d0423d_bdeb1a4ee5934cbab66cd989da873f0a.pdf" target="_blank">Download Issue</a>
                         </div>
                     </div>
@@ -138,9 +138,9 @@ class Home extends React.Component {
                         <img src={advertise} alt="advertise" />
                     </div>
                 </div>
-                <div class="d-flex article justify-content-between align-content-stretch p-0 m-0">
-                    <div id="advertiseWords" class=" d-flex flex-column w-50 align-items-center justify-content-center">
-                        <div class="text-center w-75 lead mb-2">
+                <div class="d-flex article justify-content-between align-content-stretch p-0 m-0 mt-2">
+                    <div id="advertiseWords" class="article d-flex flex-column w-50 align-items-center align-content-center justify-content-center">
+                        <div class="adtext text-center w-75 lead mb-2">
                             <h3>ADVERTISE NOW!</h3>
                             Promote your business through Native Oklahoma! Click below to view rates and size specs. Ads work! Contact Adam Proctor for more at adam@nativeoklahoma.us or call 918.409.7252
                         </div>
