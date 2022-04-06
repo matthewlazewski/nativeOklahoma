@@ -8,7 +8,6 @@ import NOKMag from '../images/NOKMag.jpg';
 import advertise from '../images/advertise.jpg';
 import Footer from './Footer';
 import Products from './shopify/Products.js';
-import Cart from './shopify/Cart.js';
 import Shop from '../images/shopnok.jpg';
 import Advertise from '../images/home-page-ad.jpg';
 import InstagramFeed from './InstagramFeed';
@@ -18,6 +17,10 @@ import Feb22 from '../images/2022/Feb2022.jpg';
 import Ad1 from '../images/Ads/4.png';
 import Ad2 from '../images/Ads/6.png';
 import BlogFeed from './BlogFeed.js';
+import logo from '../images/logo.jpg';
+import { SocialIcon } from 'react-social-icons';
+
+
 
 class Home extends React.Component {
 
@@ -36,6 +39,14 @@ class Home extends React.Component {
         this.updateQuantityInCart = this.updateQuantityInCart.bind(this);
         this.removeLineItemInCart = this.removeLineItemInCart.bind(this);
     }
+
+    // componentDidMount () {
+    //     const script = document.createElement("script");
+    
+    //     script.src = 'https://www.googletagservices.com/dcm/dcmads.js';
+    //     script.async = true;
+    //     document.body.appendChild(script);
+    // }
     
     componentWillMount() {
 
@@ -102,10 +113,11 @@ class Home extends React.Component {
 
     render(){
         return (
-            <Container className="align-items-center" style={{margin: '0 !important', padding: 0}}>
+            <Container className="align-items-center justify-content-center" style={{margin: '0 !important', padding: 0}}>
                 <div class="w-100">
                     <Header/>
                 </div>
+
                 <div class="home-main d-flex flex-column">
                     <ImageSlider/>
                     {/* <div class="home-pics">
@@ -114,9 +126,16 @@ class Home extends React.Component {
                     <div>
                         <BlogFeed token={process.env.REACT_APP_BLOGGER_KEY} /> */}
                     {/* </div> */}
+
+                    <div class="home-pics p-5">
+                        <img className="d-flex w-50" src={logo} alt="Native"/>
+                    </div>
+
                     <div class="home-pics">
                         <img id="stay-informed" src={Shop} alt="shop" />
                     </div>
+      
+                    
 
                     <Products products={this.state.products} />
                     <div class="d-flex flex-column text-center justify-content-center align-items-center">
@@ -165,6 +184,12 @@ class Home extends React.Component {
                         <img src={Ad2} style={{height: "75%", width: "90%"}} alt="ads" />
                     </div>
                 </div> */}
+                <div className="d-flex justify-content-center p-2">
+                    <SocialIcon className="p-3" network="facebook" url="https://www.facebook.com/NativeOklahoma" style={{ height: 25, width: 25 }}></SocialIcon>
+                    <SocialIcon className="p-3" network="twitter" url="https://twitter.com/NativeOklahoma" style={{ height: 25, width: 25 }}></SocialIcon>
+                    <SocialIcon className="p-3" network="instagram" url="https://www.instagram.com/nativeoklahomamagazine/" style={{ height: 25, width: 25 }}></SocialIcon>
+                    <SocialIcon className="p-3" network="linkedin" url="https://www.linkedin.com/company/native-oklahoma" style={{ height: 25, width: 25 }}></SocialIcon>
+                </div> 
                 <div class=" home-pics w-100">
                     <Footer/>
                 </div>
