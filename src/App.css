@@ -175,6 +175,10 @@ input, textarea {
   padding: 10px;
 }
 
+#head-img {
+  max-width: 200px;
+}
+
 .instapic:hover a, .instaPic:hover img{
   filter: blur(4px);
   text-decoration: none;
@@ -368,7 +372,7 @@ a {
 @media(max-width: 854px){
 
   #head-img {
-    max-width: 400px;
+    max-width: 100px;
   }
 
   .instaPic {

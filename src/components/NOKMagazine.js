@@ -13,6 +13,7 @@ import Twenty21Header from '../images/MagazineYears/2021.png';
 import Twenty22Header from '../images/MagazineYears/2022.png';
 import MagExample from '../images/magExample.jpg';
 import MagExample2 from '../images/magExample2.jpg';
+import April2022 from '../images/2022/April2022.jpg'
 
 
 const NOKMagazine = () => {
@@ -21,11 +22,11 @@ const NOKMagazine = () => {
         <Header />
         <div class="d-flex flex-column align-items-center justify-content-center">
             <div class="newissue d-flex inline-flex justify-content-between mb-2">
-                <div>
-                    <Twenty22 />
+                <div class="magYear">
+                    <a target="_blank" href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:e0c93944-4d90-3afa-ae4d-4756dd03a655" download><img src={April2022} alt="April2022" /></a>
                 </div>
                 <div class="d-flex flex-column align-items-center justify-content-center m-2">
-                    <a class="mb-3" id="latestDownload" href="https://5a762039-a2a6-4fbe-8d01-b55e1afce865.filesusr.com/ugd/d0423d_bdeb1a4ee5934cbab66cd989da873f0a.pdf" download>Download</a>
+                    <a class="mb-3" id="latestDownload" href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:e0c93944-4d90-3afa-ae4d-4756dd03a655" download>Download</a>
                     <p>Check Out Our Latest Issue</p>
                 </div>
             </div>
@@ -33,6 +34,10 @@ const NOKMagazine = () => {
                 <img src={MagExample}/>
                 <img src={MagExample2}/>
             </div>
+            <div class="d-flex justify-content-center">
+                <img src={Twenty22Header}/>
+            </div>
+            <Twenty22 />
             <div class="d-flex justify-content-center">
                 <img src={Twenty21Header}/>
             </div>
