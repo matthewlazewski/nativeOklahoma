@@ -19,6 +19,7 @@ import Ad2 from '../images/Ads/6.png';
 import BlogFeed from './BlogFeed.js';
 import logo from '../images/logo.jpg';
 import { SocialIcon } from 'react-social-icons';
+import April2022 from '../images/2022/April2022.jpg';
 
 
 
@@ -149,8 +150,8 @@ class Home extends React.Component {
                             <img id="buffalo" src={Buffalo} alt="buffalo"/>
                         </div>
                         <div class="home-mag w-50 d-flex flex-column align-items-center justify-content-center">
-                            <img id="buffalo-full" style={{height: "40%", width: "50%"}} src={Feb22} alt="latest issues"/>
-                            <a id='advertiseButton' href="https://5a762039-a2a6-4fbe-8d01-b55e1afce865.filesusr.com/ugd/d0423d_bdeb1a4ee5934cbab66cd989da873f0a.pdf" target="_blank">Download Issue</a>
+                            <img id="buffalo-full" style={{height: "40%", width: "50%"}} src={April2022} alt="latest issues"/>
+                            <a id='advertiseButton' href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:e0c93944-4d90-3afa-ae4d-4756dd03a655" target="_blank">Download Issue</a>
                         </div>
                     </div>
                     <div class="home-pics">
