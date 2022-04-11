@@ -72,7 +72,7 @@ const Advertise = (props) => {
                         <tr>
                             <td>1/12 Page</td>
                             <td>2.25" x 2.25"</td>
-                            <td>$1,800.00</td>
+                            <td>$180.00</td>
                         </tr>
                     </tbody>
                 </Table> 
