@@ -14,7 +14,7 @@ const BlogFeed = ({token}) => {
         async function fetchPosts() {
             try{
                 axios
-                    .get(`https://www.googleapis.com/blogger/v3/blogs/4793538295524012225/posts?key=${token}`)
+                    .get(`https://www.googleapis.com/blogger/v3/blogs/7214839477105802089/posts?key=${token}`)
                     .then((resp)=>{
                         setFeedsData(resp.data.items)
                     })
