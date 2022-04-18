@@ -23,6 +23,7 @@ const BlogFeed = ({token}) => {
             }
         }
 
+
         fetchPosts();
     
         return () => {
@@ -32,8 +33,8 @@ const BlogFeed = ({token}) => {
     })
 
     return (
-        <div className="d-flex flex-wrap-2">
-            {feeds.slice(0,3).map((feed) => (
+        <div className="d-flex flex-wrap-2 justify-content-between text-center">
+            {feeds.slice(feeds.length - 4,feeds.length -1).map((feed) => (
                 <Blog key={feed.id} feed={feed} />
             ))}
         </div>

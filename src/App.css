@@ -309,6 +309,25 @@ a {
   align-items: center;
 }
 
+.blogContent {
+  text-overflow: ellipsis;
+  font-size: 12px !important;
+}
+
+.blogPost{
+  background-color: antiquewhite;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  width: fit-content;
+  block-size: fit-content;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid grey;
+  padding-bottom: 10px;
+}
+
 .homepage{
   display: flex;
   flex-direction: column;

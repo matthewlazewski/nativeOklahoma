@@ -121,15 +121,17 @@ class Home extends React.Component {
 
                 <div class="home-main d-flex flex-column">
                     <ImageSlider/>
-                    {/* <div class="home-pics">
-                        <img id="stay-informed" src={Informed} alt="stay-informed"/>
-                    </div>
-                    <div>
-                        <BlogFeed token={process.env.REACT_APP_BLOGGER_KEY} /> 
-                    </div> */}
+                    
 
                     <div class="home-pics p-5">
                         <img className="d-flex w-50" src={logo} alt="Native"/>
+                    </div>
+
+                    <div class="home-pics">
+                        <img id="stay-informed" src={Informed} alt="stay-informed"/>
+                    </div>
+                    <div class="h-25 inline-block pb-5 ">
+                        <BlogFeed token={process.env.REACT_APP_BLOGGER_KEY} /> 
                     </div>
 
                     <div class="home-pics">
