@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import parse from 'html-react-parser';
 
 const Blog = (props) => {
-    const { id, published, url, title, content } = props.feed
+    const { id, published, url, title, content, author } = props.feed
     let post;
 
     const [ hover, setHover ] = useState(false);
@@ -14,13 +14,25 @@ const Blog = (props) => {
         setHover(false);
     }
 
+    const getPosition = (string, subString, index) => {
+        return string.split(subString, index).join(subString).length;
+    }
+      
+
+    let blogContent = parse(content);
+
+    let img = content.substring(getPosition(content, "<span>", 5), content.indexOf("</p>"))
+    
+    
   
     post = (
         <div class="blogPost">
             <a onMouseEnter={onHover} onMouseLeave={onLeave} href={url} target="_blank">
-                { parse(content) }
-                <p>{parse(published) }</p>
+                { title }  
             </a>
+            <div>
+                { img }
+            </div>
         </div>
     );
          
