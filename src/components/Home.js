@@ -130,10 +130,12 @@ class Home extends React.Component {
                     <div class="home-pics">
                         <img id="stay-informed" src={Informed} alt="stay-informed"/>
                     </div>
-                    <div class="h-25 inline-block pb-5 ">
+                    <div class="h-25 inline-block pb-4 ">
                         <BlogFeed token={process.env.REACT_APP_BLOGGER_KEY} /> 
                     </div>
-
+                    <div class= "d-flex align-content-center text-center justify-content-center">
+                        <a id="shop" href="https://nativeoklahomamagazine.blogspot.com/"> See All Blogs and Newsletters </a>
+                    </div>
                     <div class="home-pics">
                         <img id="stay-informed" src={Shop} alt="shop" />
                     </div>
