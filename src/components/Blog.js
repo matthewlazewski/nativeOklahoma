@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import parse from 'html-react-parser';
+import parser  from 'html-react-parser';
+import $ from "jquery";
 
 const Blog = (props) => {
     const { id, published, url, title, content, author } = props.feed
@@ -17,30 +18,19 @@ const Blog = (props) => {
     const getPosition = (string, subString, index) => {
         return string.split(subString, index).join(subString).length;
     }
-      
 
-    let blogContent = parse(content);
+    const parsed = $(content).find(".text-container");
 
-    let img = content.substring(getPosition(content, "<span>", 5), content.indexOf("</p>"))
-    
-    
-  
-    post = (
-        <div class="blogPost">
-            <a onMouseEnter={onHover} onMouseLeave={onLeave} href={url} target="_blank">
-                { title }  
-            </a>
-            <div>
-                { img }
-            </div>
-        </div>
-    );
-         
 
     return (
-        <React.Fragment>
-            {post}
-        </React.Fragment>
+      
+        <div class="blogPost">
+           
+            <div class="blogContent">
+                <a onMouseEnter={onHover} onMouseLeave={onLeave} href={url} target="_blank">{ parser(parsed[1].outerHTML) }</a>
+            </div>
+            
+        </div>
     );
 }
 
