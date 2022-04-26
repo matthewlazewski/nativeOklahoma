@@ -20,6 +20,8 @@ import BlogFeed from './BlogFeed.js';
 import logo from '../images/logo.jpg';
 import { SocialIcon } from 'react-social-icons';
 import April2022 from '../images/2022/April2022.jpg';
+import Ad from './Ad.js'
+import useScript from '../hooks/useScript.js';
 
 
 
@@ -41,11 +43,13 @@ class Home extends React.Component {
         this.removeLineItemInCart = this.removeLineItemInCart.bind(this);
     }
 
+
     // componentDidMount () {
     //     const script = document.createElement("script");
     
-    //     script.src = 'https://www.googletagservices.com/dcm/dcmads.js';
-    //     script.async = true;
+    //     script.src = "https://www.googletagservices.com/dcm/dcmads.js";
+    //     // script.async = true;
+    
     //     document.body.appendChild(script);
     // }
     
@@ -120,14 +124,19 @@ class Home extends React.Component {
                 </div>
 
                 <div class="home-main d-flex flex-column">
+
+                    {/* <div class="d-flex justify-content-center">
+                        <Ad />
+                    </div> */}
                     <ImageSlider/>
                     
+            
 
-                    <div class="home-pics p-5">
+                    {/* <div class="home-pics p-5">
                         <img className="d-flex w-50" src={logo} alt="Native"/>
-                    </div>
+                    </div> */}
 
-                    <div class="home-pics">
+                    <div class="home-pics pt-2">
                         <img id="stay-informed" src={Informed} alt="stay-informed"/>
                     </div>
                     <div class="h-25 inline-block pb-4 ">
