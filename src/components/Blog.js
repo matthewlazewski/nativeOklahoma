@@ -19,6 +19,10 @@ const Blog = (props) => {
         return string.split(subString, index).join(subString).length;
     }
 
+    const images = $(content).find("img");
+    console.log(typeof(images)) // object
+
+    // filter the object here - then clean up your errors
     const parsed = $(content).find(".text-container");
 
 
@@ -27,6 +31,7 @@ const Blog = (props) => {
         <div class="blogPost">
            
             <div class="blogContent">
+                {/* <img src={parser(mainImg[0].src)} /> */}
                 <a onMouseEnter={onHover} onMouseLeave={onLeave} href={url} target="_blank">{ parser(parsed[1].outerHTML) }</a>
             </div>
             

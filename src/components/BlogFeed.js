@@ -14,7 +14,7 @@ const BlogFeed = ({token}) => {
         async function fetchPosts() {
             try{
                 axios
-                    .get(`https://www.googleapis.com/blogger/v3/blogs/7214839477105802089/posts?key=${token}`)
+                    .get(`https://www.googleapis.com/blogger/v3/blogs/7214839477105802089/posts?key=${token}&maxResults=25`)
                     .then((resp)=>{
                         setFeedsData(resp.data.items)
                     })
@@ -35,7 +35,7 @@ const BlogFeed = ({token}) => {
     return (
     
         <div className="d-flex flex-wrap-2 justify-content-between text-center">
-            {feeds.slice(feeds.length - 4,feeds.length -1).map((feed) => (
+            {feeds.slice(-3).map((feed) => (
                 <Blog key={feed.id} feed={feed} />
             ))}
         </div>
