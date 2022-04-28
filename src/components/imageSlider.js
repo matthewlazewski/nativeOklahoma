@@ -15,7 +15,7 @@ const ImageSlider = () => {
     };
     
     return (
-        <Carousel activeIndex={index} onSelect={handleSelect} class="p-2">
+        <Carousel slide={false} fade={false} activeIndex={index} onSelect={handleSelect} class="p-2">
         <Carousel.Item>
             <img
             className="d-block w-100"

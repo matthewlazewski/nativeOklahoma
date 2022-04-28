@@ -39,6 +39,8 @@ const Products = (props) => {
 
       return(
         <Carousel
+            slide={false} 
+            fade={false}
             swipeable={false}
             draggable={false}
             // showDots={true}

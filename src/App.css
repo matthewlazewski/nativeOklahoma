@@ -303,6 +303,11 @@ a {
   color: white;
 }
 
+.home-blog-img img {
+  max-width: 25%;
+  max-height: 25%;
+}
+
 .header {
   display: flex;
   align-content: center;
