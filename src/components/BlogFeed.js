@@ -34,7 +34,7 @@ const BlogFeed = ({token}) => {
 
     return (
     
-        <div className="d-flex flex-wrap-2 justify-content-between text-center">
+        <div className="d-flex flex-column-reverse justify-content-start text-center">
             {feeds.slice(-3).map((feed) => (
                 <Blog key={feed.id} feed={feed} />
             ))}

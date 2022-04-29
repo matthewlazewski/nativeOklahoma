@@ -35,7 +35,7 @@ const Footer = () => {
 
 
     return (
-       <Container className="text-center mt-5 w-100 p-0">
+       <Container fluid className="text-center mt-5 w-100 p-0">
             <div class="footer">
 
                 <p class="pt-2 mb-1 display-5"> JOIN OUR NEWSLETTER - FOR FREE! </p>

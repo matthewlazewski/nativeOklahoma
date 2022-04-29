@@ -26,9 +26,10 @@ const Blog = (props) => {
     const parsed = $(content).find(".text-container");
 
     return (
-        <div>
+        <>
             
-            <div class="blogPost">
+            <div class="blog">
+                <div class="blog-pic">
                 {(() => {for(let i = 0; i < images.length; i ++){
                     
                     if(images[i].alt == "main-pic"){
@@ -36,12 +37,16 @@ const Blog = (props) => {
                         return <img src={images[i].src} />
                     }
                 }})()}
+                </div>
                 <div class="blogContent">
-                    <a onMouseEnter={onHover} onMouseLeave={onLeave} href={url} target="_blank">{ parser(parsed[1].outerHTML) }</a>
+                    {/* <a onMouseEnter={onHover} onMouseLeave={onLeave} href={url} target="_blank">{ parser(parsed[1].outerHTML) }</a>
+                     */}
+                    <a onMouseEnter={onHover} onMouseLeave={onLeave} href={url} target="_blank">{ title }</a>
+
                 </div>
                 
             </div>
-        </div>
+        </>
     );
 }
 

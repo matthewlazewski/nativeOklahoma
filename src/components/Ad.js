@@ -13,7 +13,7 @@ class Ad extends Component {
 
     render() {
         return (
-            <div id="ad" class="p-3">
+            <div id="ad" class="d-flex p-3">
                 <ins class='dcmads' style={{display:'inline-block',width:728,height:90}}
                     data-dcm-placement='N3535.4473285NATIVEOKLAHOMA/B27561768.333210661'
                     data-dcm-rendering-mode='iframe'

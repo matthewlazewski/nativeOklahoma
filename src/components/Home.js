@@ -118,7 +118,7 @@ class Home extends React.Component {
 
     render(){
         return (
-            <Container className="align-items-center justify-content-center" style={{margin: '0 !important', padding: 0}}>
+            <Container fluid className="" style={{margin: '0 !important', padding: 0, }}>
                 <div class="w-100">
                     <Header/>
                 </div>
@@ -139,8 +139,14 @@ class Home extends React.Component {
                     <div class="home-pics pt-2">
                         <img id="stay-informed" src={Informed} alt="stay-informed"/>
                     </div>
-                    <div class="h-25 inline-block pb-4 ">
-                        <BlogFeed token={process.env.REACT_APP_BLOGGER_KEY} /> 
+                    <div class="newsEvent d-flex align-items-center">
+                        <div class="h-25 pb-4 ">
+                            <BlogFeed token={process.env.REACT_APP_BLOGGER_KEY} /> 
+                        </div>
+                        <div class="vertical-tall"></div>
+                        <div>
+
+                        </div>
                     </div>
                     <div class= "d-flex align-content-center text-center justify-content-center">
                         <a id="shop" href="https://nativeoklahomamagazine.blogspot.com/" target="_blank"> See All Blogs and Newsletters </a>

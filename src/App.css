@@ -264,6 +264,12 @@ input, textarea {
 
 }
 
+.vertical-tall {
+  border-left: 1px solid grey;
+  height: 200px;
+  margin: 5rem;
+}
+
 navbar {
   color: white;
 }
@@ -316,12 +322,28 @@ a {
 
 .blogContent {
   text-overflow: ellipsis;
-  font-size: 12px !important;
+  font-size: 14px !important;
+  margin-left: 10px;
+}
+
+.blog{
+  display: flex;
+  margin: 10px;
+  align-items: center;
+}
+
+.blog-pic {
+  width: 50%;
+}
+
+.blog-pic img {
+  width: 150px;
+  object-fit: contain;
 }
 
 .blogPost{
   background-color: antiquewhite;
-  max-height: 400px;
+  max-height: 200px;
   display: flex;
   flex-direction: column;
   max-width: 30%;
@@ -394,6 +416,10 @@ a {
 }
 
 @media(max-width: 854px){
+
+  .blog-pic img {
+    width: 100px;
+  }
 
   #head-img {
     max-width: 100px;
