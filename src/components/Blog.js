@@ -41,7 +41,7 @@ const Blog = (props) => {
                 <div class="blogContent">
                     {/* <a onMouseEnter={onHover} onMouseLeave={onLeave} href={url} target="_blank">{ parser(parsed[1].outerHTML) }</a>
                      */}
-                    <a onMouseEnter={onHover} onMouseLeave={onLeave} href={url} target="_blank">{ title }</a>
+                    <a onMouseEnter={onHover} onMouseLeave={onLeave} href={url} rel="norefferer"  target="_blank">{ title }</a>
 
                 </div>
                 

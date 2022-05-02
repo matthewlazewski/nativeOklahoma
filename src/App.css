@@ -322,6 +322,10 @@ a {
 }
 
 .blogContent {
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
   display: flex;
   text-overflow: ellipsis;
   font-size: 14px !important;
@@ -363,7 +367,6 @@ a {
   display: flex;
   margin: 10px;
   align-items: center;
-  justify-content: center;
 }
 
 .pod-pic img {
