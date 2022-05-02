@@ -146,7 +146,8 @@ class Home extends React.Component {
                         </div>
                         <div class="h-25 pb-4 w-50">
                             <PodcastFeed />
-                            <div>
+                            <div class= "d-flex align-content-center text-center justify-content-center">
+                                <a href="https://nativechoctalk.com/podcasts/" target="_blank"> See All Podcasts </a>
                             </div>                
                         </div>
                     </div>
