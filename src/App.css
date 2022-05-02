@@ -328,10 +328,29 @@ a {
   align-content: center;
   display: flex;
   text-overflow: ellipsis;
-  font-size: 14px !important;
+  font-size: 1em !important;
   margin-left: 10px;
   padding-right: 5px;
 }
+
+div.blogContent > *{
+  margin: 0;
+}
+
+.blogPost{
+  max-height: 80px;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: fit-content;
+  block-size: fit-content;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-bottom: 10px;
+}
+
+
+
 
 .blogContent a:hover, .pod-content a:hover{
   color: grey;
@@ -353,14 +372,14 @@ a {
   border-radius: 3px;
   border: 1px solid grey;
   display: flex;
+  flex-direction: row;
   margin: 10px;
   align-items: center;
   font-size: 10px;
-
+  max-height: 200px;
 }
 
 .blog{
-  flex: 1;
   padding: 5px;
   border-radius: 3px;
   border: 1px solid grey;
@@ -421,6 +440,18 @@ a {
     text-align: center;
     padding: 10px;
   }
+
+  .blogContent {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    text-overflow: none;
+    font-size: .75em !important;
+    margin-left: 10px;
+    padding-right: 5px;
+  }
   
   .instapic:hover a, .instaPic:hover img{
     filter: blur(4px);
@@ -450,9 +481,33 @@ a {
 
 @media(max-width: 854px){
 
+  .GoogleCreativeContainerClass > img{
+    width: 500px;
+  }
+
+  .pod {
+    height: 170px;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content:center;
+  }
+
+  .blog {
+    height: 170px;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content:center;
+  }
+ 
+  .pod-pic, .blog-pic {
+    padding-top: 10px;
+  }
+
   .blog-pic img, .pod-pic img {
-    width: 100px;
-    height: 65px;
+    width: 150px;
+    height: 100px;
   }
 
   #head-img {
@@ -474,6 +529,17 @@ a {
     filter: blur(4px);
     text-decoration: none;
     transform: none;
+  }
+  .blogContent {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    text-overflow: none;
+    font-size: .8em !important;
+    margin-left: 10px;
+    padding-right: 5px;
   }
 
   #buffalo {
@@ -574,5 +640,26 @@ a {
 
   #advertiseWords, .home-mag {
     background-image: none;
+  }
+
+  @media(max-width: 600px) {
+  
+    .blog-pic img, .pod-pic img {
+      padding-top: 10px;
+      width: 150px;
+      height: 80px;
+    }
+
+    .blogContent {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      align-content: center;
+      display: flex;
+      text-overflow: none;
+      font-size: .8em !important;
+      margin: 10px;
+      padding-right: 5px;
+    }
   }
 }

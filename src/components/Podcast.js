@@ -32,6 +32,9 @@ const Blog = (props) => {
                     {/* <a href={mp4} onClick={togglePlay} > Play </a> */}
                     <a onMouseEnter={onHover} onMouseLeave={onLeave} href={link} rel="norefferer" target="_blank"><h6>{name}</h6>{ description }</a>
                 </div>
+                <div>
+                    
+                </div>
             </div>
         </>
     );
