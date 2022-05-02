@@ -3,6 +3,7 @@ import parser  from 'html-react-parser';
 import $ from "jquery";
 
 const Blog = (props) => {
+    const [image, setImage] = useState([])
     const { id, published, url, title, content, author } = props.feed
     let post;
 
@@ -18,19 +19,34 @@ const Blog = (props) => {
     const getPosition = (string, subString, index) => {
         return string.split(subString, index).join(subString).length;
     }
+  
+    const images = $(content).find("img");
 
+    // filter the object here - then clean up your errors
     const parsed = $(content).find(".text-container");
 
-
     return (
-      
-        <div class="blogPost">
-           
-            <div class="blogContent">
-                <a onMouseEnter={onHover} onMouseLeave={onLeave} href={url} target="_blank">{ parser(parsed[1].outerHTML) }</a>
-            </div>
+        <>
             
-        </div>
+            <div class="blog">
+                <div class="blog-pic">
+                {(() => {for(let i = 0; i < images.length; i ++){
+                    
+                    if(images[i].alt == "main-pic"){
+                        // console.log(images[i].src)
+                        return <img src={images[i].src} />
+                    }
+                }})()}
+                </div>
+                <div class="blogContent">
+                    
+                    <a onMouseEnter={onHover} onMouseLeave={onLeave} href={url} rel="norefferer"  target="_blank">{ title }</a>
+                    {/* <div class="blogPost">{ parser(parsed[1].outerHTML) }</div> */}
+                    
+                </div>
+                
+            </div>
+        </>
     );
 }
 

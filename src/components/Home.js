@@ -13,10 +13,8 @@ import Advertise from '../images/home-page-ad.jpg';
 import InstagramFeed from './InstagramFeed';
 import AdvertiseBackground from '../images/advertise-background.jpg';
 import Buffalo from '../images/buffalo_full.jpg';
-import Feb22 from '../images/2022/Feb2022.jpg';
-import Ad1 from '../images/Ads/4.png';
-import Ad2 from '../images/Ads/6.png';
 import BlogFeed from './BlogFeed.js';
+import PodcastFeed from './PodcastFeed.js'
 import logo from '../images/logo.jpg';
 import { SocialIcon } from 'react-social-icons';
 import April2022 from '../images/2022/April2022.jpg';
@@ -118,7 +116,7 @@ class Home extends React.Component {
 
     render(){
         return (
-            <Container className="align-items-center justify-content-center" style={{margin: '0 !important', padding: 0}}>
+            <Container fluid className="" style={{margin: '0 !important', padding: 0, }}>
                 <div class="w-100">
                     <Header/>
                 </div>
@@ -139,12 +137,23 @@ class Home extends React.Component {
                     <div class="home-pics pt-2">
                         <img id="stay-informed" src={Informed} alt="stay-informed"/>
                     </div>
-                    <div class="h-25 inline-block pb-4 ">
-                        <BlogFeed token={process.env.REACT_APP_BLOGGER_KEY} /> 
+                    <div class="newsEvent d-flex justify-content-center align-items-center flex-1">
+                        <div class="h-25 pb-4 w-50 ">
+                            <BlogFeed token={process.env.REACT_APP_BLOGGER_KEY} /> 
+                            <div class= "d-flex align-content-center text-center justify-content-center">
+                                <a href="https://nativeoklahomamagazine.blogspot.com/" target="_blank"> See More </a>
+                            </div>
+                        </div>
+                        <div class="h-25 pb-4 w-50">
+                            <PodcastFeed />
+                            <div class= "d-flex align-content-center text-center justify-content-center">
+                                <a href="https://nativechoctalk.com/podcasts/" target="_blank"> See All Podcasts </a>
+                            </div>                
+                        </div>
                     </div>
-                    <div class= "d-flex align-content-center text-center justify-content-center">
+                    {/* <div class= "d-flex align-content-center text-center justify-content-center">
                         <a id="shop" href="https://nativeoklahomamagazine.blogspot.com/" target="_blank"> See All Blogs and Newsletters </a>
-                    </div>
+                    </div> */}
                     <div class="home-pics">
                         <img id="stay-informed" src={Shop} alt="shop" />
                     </div>

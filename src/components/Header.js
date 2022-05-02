@@ -10,7 +10,7 @@ import { PersonCircle } from 'react-bootstrap-icons';
 
 const Header = (props) => {
     return(
-        <Container className="text-center w-100 p-0">
+        <Container fluid className="text-center w-100 p-0" style={{padding: 0}}>
 
             <div className="d-flex justify-content-around">
                 <div class="home-pics p-4">
