@@ -11,8 +11,8 @@ import ContactForm from './ContactForm.js'
 const Contact = (props) => {
 
     return (
-        <Container>
-            <Header />
+        <Container fluid className="" style={{margin: '0 !important', padding: 0, }}>
+        <Header />
             <img src={ContactPhoto} style={{width: '100%'}} /> 
             <div >
             <div class="article d-flex inline-flex align-content-stretch justify-content-between p-3">

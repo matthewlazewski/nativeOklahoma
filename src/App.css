@@ -237,6 +237,7 @@ input, textarea {
 }
 
 .magYear img{
+  max-width: 250px;
   padding: 10px;
 }
 

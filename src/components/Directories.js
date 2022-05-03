@@ -12,8 +12,8 @@ import TradePosts from '../images/TradePosts.jpg';
 
 const Directories = (props) => {
     return (
-        <Container>
-            <Header />
+        <Container fluid className="" style={{margin: '0 !important', padding: 0, }}>
+        <Header />
             <div class="d-flex flex-column pt-3">
                 <div>
                     <ul id="directoryHeader">
