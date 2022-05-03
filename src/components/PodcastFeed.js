@@ -31,7 +31,7 @@ const PodcastFeed = () => {
  
     return (
     
-        <div className="d-flex flex-column-reverse justify-content-start text-center">
+        <div className="d-flex flex-column justify-content-start text-center">
             {podcasts.slice(-3).map((podcast) => (
                 <Podcast key={podcast.id} pod={podcast}  />
             ))}
