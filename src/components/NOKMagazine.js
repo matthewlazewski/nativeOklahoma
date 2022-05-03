@@ -13,20 +13,20 @@ import Twenty21Header from '../images/MagazineYears/2021.png';
 import Twenty22Header from '../images/MagazineYears/2022.png';
 import MagExample from '../images/magExample.jpg';
 import MagExample2 from '../images/magExample2.jpg';
-import April2022 from '../images/2022/April2022.jpg'
+import CurrentIssue from '../images/2022/May2022.jpg';
 
 
 const NOKMagazine = () => {
     return (
-        <Container>
+        <Container fluid className="" style={{margin: '0 !important', padding: 0, }}>
         <Header />
         <div class="d-flex flex-column align-items-center justify-content-center">
             <div class="newissue d-flex inline-flex justify-content-between mb-2">
                 <div class="magYear">
-                    <a target="_blank" href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:e0c93944-4d90-3afa-ae4d-4756dd03a655" download><img src={April2022} alt="April2022" /></a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1jbBPamPDpDQ6o9fSnJ_-H8OMcomK3Fj1/view?usp=sharing" download><img src={CurrentIssue} alt="Current Issue" /></a>
                 </div>
                 <div class="d-flex flex-column align-items-center justify-content-center m-2">
-                    <a class="mb-3" id="latestDownload" href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:e0c93944-4d90-3afa-ae4d-4756dd03a655" download>Download</a>
+                    <a class="mb-3" id="latestDownload" href="https://drive.google.com/file/d/1jbBPamPDpDQ6o9fSnJ_-H8OMcomK3Fj1/view?usp=sharing" download>Download</a>
                     <p>Check Out Our Latest Issue</p>
                 </div>
             </div>
