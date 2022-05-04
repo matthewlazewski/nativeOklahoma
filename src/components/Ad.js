@@ -15,7 +15,7 @@ class Ad extends Component {
         return (
             <div id="ad" class="d-flex p-3">
                 <ins class='dcmads' style={{display:'inline-block',width:728,height:90}}
-                    data-dcm-placement='N3535.4473285NATIVEOKLAHOMA/B27561768.333210661'
+                    data-dcm-placement='N3535.4473285NATIVEOKLAHOMA/B27681845.334726701'
                     data-dcm-rendering-mode='iframe'
                     data-dcm-https-only
                     data-dcm-gdpr-applies='gdpr=${GDPR}'

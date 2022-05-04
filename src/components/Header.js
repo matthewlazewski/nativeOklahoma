@@ -13,7 +13,7 @@ const Header = (props) => {
         <Container fluid className="text-center w-100 p-0" style={{padding: 0}}>
 
             <div className="d-flex justify-content-around">
-                <div class="home-pics p-4">
+                <div id="logo" class="home-pics p-4">
                     <img className="d-flex w-75" src={logo} alt="Native"/>
                 </div>
                 <Ad />
