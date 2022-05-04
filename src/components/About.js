@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import Header from './Header.js';
 import AboutImage from '../images/aboutImage.jpg';
@@ -11,10 +10,10 @@ const About = (props) => {
         <Container fluid className="" style={{margin: '0 !important', padding: 0, }}>
         <Header/>
             
-            <img src={AboutImage} style={{width: '100%'}} /> 
+            <img src={AboutImage} alt="about" style={{width: '100%'}} /> 
             <div class="article d-flex inline-flex align-content-stretch justify-content-between p-3">
                 <div class="pr-3">
-                    <img id="adam" src={Adam}/>
+                    <img alt="adam" id="adam" src={Adam}/>
                     <div style={{textAlign: 'center'}}>
                         <h4 class="pt-1" style={{color: 'rgb(155, 40, 42)'}}>ADAM PROCTOR</h4>
                         <h6 style={{color: '#AD7F09'}}>FOUNDER | EDITOR-IN-CHIEF</h6>
