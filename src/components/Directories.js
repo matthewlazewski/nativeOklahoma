@@ -25,19 +25,19 @@ const Directories = (props) => {
                     </ul>
                 </div>
                 <div id="OklahomaTribalDirectory" class="home-pics p-2 p2">
-                    <img src={TribalDirectory} />
+                    <img alt="" src={TribalDirectory} />
                 </div>
                 <div id="ResortsCasinos" class="home-pics p-2 p2">
-                    <img src={Resorts} />
+                    <img alt="" src={Resorts} />
                 </div>
                 <div id="GolfCourses" class="home-pics p-2 p2">
-                    <img src={GolfCourses} />
+                    <img alt="" src={GolfCourses} />
                 </div>
                 <div id="RVListings" class="home-pics p-2 p2">
-                    <img src={RVListings} />
+                    <img alt="" src={RVListings} />
                 </div>
                 <div id="TradePosts" class="home-pics p-2 p2">
-                    <img src={TradePosts} />
+                    <img alt="" src={TradePosts} />
                 </div>
             </div>
             <Footer />

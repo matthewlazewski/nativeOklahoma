@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import { Container } from 'react-bootstrap';
 import Header from './Header';
 import ImageSlider from './imageSlider';
@@ -11,15 +10,12 @@ import Products from './shopify/Products.js';
 import Shop from '../images/shopnok.jpg';
 import Advertise from '../images/home-page-ad.jpg';
 import InstagramFeed from './InstagramFeed';
-import AdvertiseBackground from '../images/advertise-background.jpg';
 import Buffalo from '../images/buffalo_full.jpg';
 import BlogFeed from './BlogFeed.js';
 import PodcastFeed from './PodcastFeed.js'
-import logo from '../images/logo.jpg';
 import { SocialIcon } from 'react-social-icons';
 import CurrentIssue from '../images/2022/May2022.jpg';
-import Ad from './Ad.js'
-import useScript from '../hooks/useScript.js';
+
 
 
 
@@ -141,18 +137,18 @@ class Home extends React.Component {
                         <div class="h-25 pb-4 w-50 ">
                             <BlogFeed token={process.env.REACT_APP_BLOGGER_KEY} /> 
                             <div class= "d-flex align-content-center text-center justify-content-center">
-                                <a href="https://nativeoklahomamagazine.blogspot.com/" target="_blank"> See More </a>
+                                <a href="https://nativeoklahomamagazine.blogspot.com/" target="_blank" rel="noreferrer"> See More </a>
                             </div>
                         </div>
                         <div class="h-25 pb-4 w-50">
                             <PodcastFeed />
                             <div class= "d-flex align-content-center text-center justify-content-center">
-                                <a href="https://nativechoctalk.com/podcasts/" target="_blank"> See All Podcasts </a>
+                                <a href="https://nativechoctalk.com/podcasts/" target="_blank" rel="noreferrer"> See All Podcasts </a>
                             </div>                
                         </div>
                     </div>
                     {/* <div class= "d-flex align-content-center text-center justify-content-center">
-                        <a id="shop" href="https://nativeoklahomamagazine.blogspot.com/" target="_blank"> See All Blogs and Newsletters </a>
+                        <a id="shop" href="https://nativeoklahomamagazine.blogspot.com/" target="_blank" rel="noreferrer"> See All Blogs and Newsletters </a>
                     </div> */}
                     <div class="home-pics">
                         <img id="stay-informed" src={Shop} alt="shop" />
@@ -173,7 +169,7 @@ class Home extends React.Component {
                         </div>
                         <div class="home-mag w-50 d-flex flex-column align-items-center justify-content-center">
                             <img id="buffalo-full" style={{height: "40%", width: "50%"}} src={CurrentIssue} alt="latest issues"/>
-                            <a id='advertiseButton' href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:e0c93944-4d90-3afa-ae4d-4756dd03a655" target="_blank">Download Issue</a>
+                            <a id='advertiseButton' href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:e0c93944-4d90-3afa-ae4d-4756dd03a655" target="_blank" rel="noreferrer">Download Issue</a>
                         </div>
                     </div>
                     <div class="home-pics">
@@ -193,7 +189,7 @@ class Home extends React.Component {
                         </div>
                     </div>
                     <div id="adpic" class="home-pics d-flex justify-content-center w-50">
-                        <img src={Advertise} />
+                        <img alt="advertise" src={Advertise} />
                     </div>
                 </div>
                 <div id="instafeed" class="d-flex inline-flex align-content-center flex-wrap justify-content-center">

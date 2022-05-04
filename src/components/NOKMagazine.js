@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import Header from './Header.js';
 import Footer from './Footer.js';
@@ -23,7 +22,7 @@ const NOKMagazine = () => {
         <div class="d-flex flex-column align-items-center justify-content-center">
             <div class="newissue d-flex inline-flex justify-content-between mb-2">
                 <div class="magYear">
-                    <a target="_blank" href="https://drive.google.com/file/d/1jbBPamPDpDQ6o9fSnJ_-H8OMcomK3Fj1/view?usp=sharing" download><img src={CurrentIssue} alt="Current Issue" /></a>
+                    <a target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1jbBPamPDpDQ6o9fSnJ_-H8OMcomK3Fj1/view?usp=sharing" download><img src={CurrentIssue} alt="Current Issue" /></a>
                 </div>
                 <div class="d-flex flex-column align-items-center justify-content-center m-2">
                     <a class="mb-3" id="latestDownload" href="https://drive.google.com/file/d/1jbBPamPDpDQ6o9fSnJ_-H8OMcomK3Fj1/view?usp=sharing" download>Download</a>
@@ -31,23 +30,23 @@ const NOKMagazine = () => {
                 </div>
             </div>
             <div class="article d-flex inline-flex align-items-center justify-content-center mr-0 ml-0 mb-2">
-                <img src={MagExample}/>
-                <img src={MagExample2}/>
+                <img alt="Example" src={MagExample}/>
+                <img alt="Example" src={MagExample2}/>
             </div>
             <div class="d-flex justify-content-center">
-                <img src={Twenty22Header}/>
+                <img alt="2022" src={Twenty22Header}/>
             </div>
             <Twenty22 />
             <div class="d-flex justify-content-center">
-                <img src={Twenty21Header}/>
+                <img alt="2021" src={Twenty21Header}/>
             </div>
             <Twenty21 />
             <div class="d-flex justify-content-center">
-                <img src={Twenty20Header}/>
+                <img alt="2020" src={Twenty20Header}/>
             </div>
             <Twenty20 />
             <div class="d-flex justify-content-center">
-                <img src={Twenty19Header} />
+                <img alt="2019" src={Twenty19Header} />
             </div>
             <Twenty19 />
         </div>
