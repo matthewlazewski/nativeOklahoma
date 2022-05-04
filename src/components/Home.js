@@ -17,7 +17,7 @@ import BlogFeed from './BlogFeed.js';
 import PodcastFeed from './PodcastFeed.js'
 import logo from '../images/logo.jpg';
 import { SocialIcon } from 'react-social-icons';
-import April2022 from '../images/2022/April2022.jpg';
+import CurrentIssue from '../images/2022/May2022.jpg';
 import Ad from './Ad.js'
 import useScript from '../hooks/useScript.js';
 
@@ -172,7 +172,7 @@ class Home extends React.Component {
                             <img id="buffalo" src={Buffalo} alt="buffalo"/>
                         </div>
                         <div class="home-mag w-50 d-flex flex-column align-items-center justify-content-center">
-                            <img id="buffalo-full" style={{height: "40%", width: "50%"}} src={April2022} alt="latest issues"/>
+                            <img id="buffalo-full" style={{height: "40%", width: "50%"}} src={CurrentIssue} alt="latest issues"/>
                             <a id='advertiseButton' href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:e0c93944-4d90-3afa-ae4d-4756dd03a655" target="_blank">Download Issue</a>
                         </div>
                     </div>

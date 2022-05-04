@@ -8,8 +8,8 @@ import Footer from './Footer.js'
 
 const About = (props) => {
     return (
-        <Container>
-            <Header/>
+        <Container fluid className="" style={{margin: '0 !important', padding: 0, }}>
+        <Header/>
             
             <img src={AboutImage} style={{width: '100%'}} /> 
             <div class="article d-flex inline-flex align-content-stretch justify-content-between p-3">

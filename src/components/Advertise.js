@@ -7,12 +7,12 @@ import Footer from './Footer.js';
 
 const Advertise = (props) => {
     return (
-        <Container>
-            <Header />
+        <Container fluid className="" style={{margin: '0 !important', padding: 0, }}>
+        <Header />
             <div class="text-center p-2">
                 <h3 class="title">Magazine Advertising Rates</h3>
             </div>
-            <div class="article d-flex">
+            <div class="article d-flex p-3">
                 <div class="headline">
                     <h6>Premium Full Page - $2,200</h6>
                     <p>
