@@ -20,14 +20,14 @@ const ImageSlider = () => {
             <img
             className="d-block w-100"
             src={ Buffalo }
-            alt="First slide"
+            alt="Buffalo"
             />
         </Carousel.Item>
         <Carousel.Item>
             <img
             className="d-block w-100"
             src={ Subscribe }
-            alt="Second slide"
+            alt="Subscribe"
             />
         </Carousel.Item>
         </Carousel>

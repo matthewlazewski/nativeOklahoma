@@ -15,6 +15,7 @@ import BlogFeed from './BlogFeed.js';
 import PodcastFeed from './PodcastFeed.js'
 import { SocialIcon } from 'react-social-icons';
 import CurrentIssue from '../images/2022/May2022.jpg';
+import OpiodAd from '../images/opiod_help.jpg';
 
 
 
@@ -133,18 +134,21 @@ class Home extends React.Component {
                     <div class="home-pics pt-2">
                         <img id="stay-informed" src={Informed} alt="stay-informed"/>
                     </div>
-                    <div class="newsEvent d-flex justify-content-center align-items-center flex-1">
-                        <div class="h-25 pb-4 w-50 ">
+                    <div class="newsEvent">
+                        <div class="h-25 pb-4 ">
                             <BlogFeed token={process.env.REACT_APP_BLOGGER_KEY} /> 
                             <div class= "d-flex align-content-center text-center justify-content-center">
                                 <a href="https://nativeoklahomamagazine.blogspot.com/" target="_blank" rel="noreferrer"> See More </a>
                             </div>
                         </div>
-                        <div class="h-25 pb-4 w-50">
+                        <div class="h-25 pb-4 ">
                             <PodcastFeed />
                             <div class= "d-flex align-content-center text-center justify-content-center">
                                 <a href="https://nativechoctalk.com/podcasts/" target="_blank" rel="noreferrer"> See All Podcasts </a>
                             </div>                
+                        </div>
+                        <div class="pb-4">
+                            <img id="opiodAd" class="instaPic" style={{height: '75%'}} src={OpiodAd} alt="Opiod Help" />
                         </div>
                     </div>
                     {/* <div class= "d-flex align-content-center text-center justify-content-center">

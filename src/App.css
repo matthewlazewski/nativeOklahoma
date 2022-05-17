@@ -26,6 +26,13 @@ input, textarea {
   max-height: 200px;
 }
 
+.newsEvent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
 #shop {
   width: 30%;
   border-radius: 5px;
@@ -173,6 +180,13 @@ input, textarea {
   overflow: hidden;
   text-align: center;
   padding: 10px;
+}
+
+.event {
+  padding: 10px;
+  display: flex;
+  justify-content:center; 
+  align-items:center;
 }
 
 #head-img {
@@ -645,7 +659,36 @@ div.blogContent > *{
   }
 
   @media(max-width: 600px) {
+
+    #ad {
+      width: 100%;
+    }
+
+    .pod {
+      height: 150px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center;
+      justify-content:center;
+    }
   
+    .blog {
+      height: 100px;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center;
+      justify-content:center;
+    }
+
+    .newsEvent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+    }
+    
     .blog-pic img, .pod-pic img {
       padding-top: 10px;
       width: 150px;
@@ -659,7 +702,19 @@ div.blogContent > *{
       align-content: center;
       display: flex;
       text-overflow: none;
-      font-size: .8em !important;
+      font-size: .6em !important;
+      margin: 10px;
+      padding-right: 5px;
+    }
+
+    .pod-content {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      align-content: center;
+      display: flex;
+      text-overflow: none;
+      font-size: .6em !important;
       margin: 10px;
       padding-right: 5px;
     }
