@@ -10,8 +10,8 @@ export default class NavBar extends React.Component {
                     <Navbar.Brand href="/">Home</Navbar.Brand>
                     <Navbar.Brand href="/about">About</Navbar.Brand>
                     {/* <Navbar.Brand href="/culture">Culture</Navbar.Brand> */}
-                    {/* <Navbar.Brand href="/events">Events</Navbar.Brand>
-                    <Navbar.Brand href="/mmip">MMIP</Navbar.Brand> */}
+                    <Navbar.Brand href="/events">Events</Navbar.Brand>
+                    {/* <Navbar.Brand href="/mmip">MMIP</Navbar.Brand>  */}
                     <Navbar.Brand href="/advertise">Advertise</Navbar.Brand>          
                     <Navbar.Brand href="/nok-magazine">NOK Magazine</Navbar.Brand>
                     <Navbar.Brand href="/directories">Directories</Navbar.Brand>     
