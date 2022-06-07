@@ -123,7 +123,7 @@ class Home extends React.Component {
                     {/* <div class="d-flex justify-content-center">
                         <Ad />
                     </div> */}
-                    <ImageSlider/>
+                    <ImageSlider currentIssue={CurrentIssue} />
                     
             
 
@@ -159,7 +159,6 @@ class Home extends React.Component {
                     </div>
       
                     
-
                     <Products products={this.state.products} />
                     <div class="d-flex flex-column text-center justify-content-center align-items-center">
                         <a href="https://native-oklahoma-store.myshopify.com/" target="_blank" rel="noreferrer" id="shop">Shop Our Entire Store</a>
@@ -173,7 +172,7 @@ class Home extends React.Component {
                         </div>
                         <div class="home-mag w-50 d-flex flex-column align-items-center justify-content-center">
                             <img id="buffalo-full" style={{height: "40%", width: "50%"}} src={CurrentIssue} alt="latest issues"/>
-                            <a id='advertiseButton' href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:e0c93944-4d90-3afa-ae4d-4756dd03a655" target="_blank" rel="noreferrer">Download Issue</a>
+                            <a id='advertiseButton' href="https://drive.google.com/file/d/1jbBPamPDpDQ6o9fSnJ_-H8OMcomK3Fj1/view?usp=sharing" target="_blank" rel="noreferrer">Download Issue</a>
                         </div>
                     </div>
                     <div class="home-pics">
