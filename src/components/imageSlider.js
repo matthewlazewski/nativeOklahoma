@@ -4,10 +4,11 @@ import Subscribe from '../images/subscribeBackground.jpg';
 import Southwest from '../images/SouthwestTrading.jpg';
 import MuscogeeFest from '../images/muscogee_fest.jpg';
 import { Carousel } from "react-bootstrap";
-import HempOil from "../images/hemp_oil.png";
+import HempOil from "../images/hemp.jpg";
 import Art from "../images/art.jpg";
-import ArtGallery from "../images/art_gallery.png";
-import Choctalk from "../images/choctalk.png";
+import ArtGallery from "../images/gallery.jpg";
+import WebActivity from "../images/webactivity.jpg";
+import Choctalk from "../images/s2e18.jpg";
 import "bootstrap/dist/css/bootstrap.css";
 import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
 
@@ -111,6 +112,17 @@ const ImageSlider = ({currentIssue}) => {
                     <img
                     className="carousel-pic"
                     src={ Choctalk }
+                    alt="Current Issue"
+                    />
+                </a>
+                </div>
+            </Carousel.Item>
+            <Carousel.Item >
+                <div class="d-flex align-items-center justify-content-center flex-column text-center">
+                <a target="_blank" rel="noreferrer" href="https://www.nativeoklahoma.us/advertise">
+                    <img
+                    className="carousel-pic"
+                    src={ WebActivity }
                     alt="Current Issue"
                     />
                 </a>
