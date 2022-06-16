@@ -14,7 +14,7 @@ import Buffalo from '../images/buffalo_full.jpg';
 import BlogFeed from './BlogFeed.js';
 import PodcastFeed from './PodcastFeed.js'
 import { SocialIcon } from 'react-social-icons';
-import CurrentIssue from '../images/2022/May2022.jpg';
+import CurrentIssue from '../images/2022/June2022.png';
 import OpiodAd from '../images/opiod_help.jpg';
 
 
@@ -172,7 +172,7 @@ class Home extends React.Component {
                         </div>
                         <div class="home-mag w-50 d-flex flex-column align-items-center justify-content-center">
                             <img id="buffalo-full" style={{height: "40%", width: "50%"}} src={CurrentIssue} alt="latest issues"/>
-                            <a id='advertiseButton' href="https://drive.google.com/file/d/1jbBPamPDpDQ6o9fSnJ_-H8OMcomK3Fj1/view?usp=sharing" target="_blank" rel="noreferrer">Download Issue</a>
+                            <a id='advertiseButton' href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:2608eb59-cfe1-3fae-822a-45af528fade3#pageNum=1" target="_blank" rel="noreferrer">Download Issue</a>
                         </div>
                     </div>
                     <div class="home-pics">

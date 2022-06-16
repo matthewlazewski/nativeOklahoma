@@ -12,7 +12,7 @@ import Twenty21Header from '../images/MagazineYears/2021.png';
 import Twenty22Header from '../images/MagazineYears/2022.png';
 import MagExample from '../images/magExample.jpg';
 import MagExample2 from '../images/magExample2.jpg';
-import CurrentIssue from '../images/2022/May2022.jpg';
+import CurrentIssue from '../images/2022/June2022.png';
 
 
 const NOKMagazine = () => {
@@ -22,10 +22,10 @@ const NOKMagazine = () => {
         <div class="d-flex flex-column align-items-center justify-content-center">
             <div class="newissue d-flex inline-flex justify-content-between mb-2">
                 <div class="magYear">
-                    <a target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1jbBPamPDpDQ6o9fSnJ_-H8OMcomK3Fj1/view?usp=sharing" download><img src={CurrentIssue} alt="Current Issue" /></a>
+                    <a target="_blank" rel="noreferrer" href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:2608eb59-cfe1-3fae-822a-45af528fade3#pageNum=1" download><img src={CurrentIssue} alt="Current Issue" /></a>
                 </div>
                 <div class="d-flex flex-column align-items-center justify-content-center m-2">
-                    <a class="mb-3" id="latestDownload" href="https://drive.google.com/file/d/1jbBPamPDpDQ6o9fSnJ_-H8OMcomK3Fj1/view?usp=sharing" download>Download</a>
+                    <a target="_blank"  class="mb-3" id="latestDownload" href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:2608eb59-cfe1-3fae-822a-45af528fade3#pageNum=1" download>Download</a>
                     <p>Check Out Our Latest Issue</p>
                 </div>
             </div>
