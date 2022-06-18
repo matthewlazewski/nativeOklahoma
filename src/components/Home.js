@@ -13,6 +13,7 @@ import InstagramFeed from './InstagramFeed';
 import Buffalo from '../images/buffalo_full.jpg';
 import BlogFeed from './BlogFeed.js';
 import PodcastFeed from './PodcastFeed.js'
+import ArtesianAd from './ArtesianAd.js';
 import { SocialIcon } from 'react-social-icons';
 import CurrentIssue from '../images/2022/June2022.png';
 import OpiodAd from '../images/opiod_help.jpg';
@@ -130,6 +131,10 @@ class Home extends React.Component {
                     {/* <div class="home-pics p-5">
                         <img className="d-flex w-50" src={logo} alt="Native"/>
                     </div> */}
+
+                    <div class="d-flex align-items-center justify-content-center">
+                        < ArtesianAd />
+                    </div>
 
                     <div class="home-pics pt-2">
                         <img id="stay-informed" src={Informed} alt="stay-informed"/>
